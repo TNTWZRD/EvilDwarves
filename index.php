@@ -2,25 +2,62 @@
 
 <html>
 <head>
-
-	<title>
-		Epic World
-	</title>
+<title>
+EvilDwarves
+</title>
 </head>
 
 <body>
-<script type="text/javascript" src="Jquerry.min.js"></script>
+<h1>This Game Requires A Console. I Suggest Chrome For That! :)</h1>
 
-<div class="titlebar">
-</div>
+<table id="status">
+<td>
+<table border="1px" padding="2px" style="text-align: center;">
+<tr>
+<th> Item: </th>
+<th> Count: </th>
+</tr>
+<tr>
+<td> Dwarves </td>
+<td id="DwarvesCount"> 1 </td>
+</tr>
+<tr>
+<td> Pickaxes </td>
+<td id="PickaxesCount"> 2 </td>
+</tr>
+<tr>
+<td> Hoes </td>
+<td id="HoeCount"> 0 </td>
+</tr>
+</table>
+</td>
+<td>
+<table border="1px" padding="2px" style="text-align: center;">
+<tr>
+<th> Dwarf Occupation: </th>
+<th> Count: </th>
+</tr>
+<tr>
+<td> None: </td>
+<td> 1 </td>
+</tr>
+<tr>
+<td> Miner: </td>
+<td> 0 </td>
+</tr>
+</tr>
+<tr>
+<td> Farmer: </td>
+<td> 0 </td>
+</tr>
+</table>
+</td>
+<table>
 
-<div id="StatusBar"><br></div>
 
 
-<script type="text/javascript" src="main.js"></script>
-<script type="text/javascript" src="anamallogic.js"></script>
-<script type="text/javascript" src="playerlogic.js"></script>
-<script type="text/javascript" src="quests.js"></script>
-<script type="text/javascript" src="experiance.js"></script>
-</body>	
+<script src="main.js"></script>
+<script src="dwarves.js"></script>
+<script src="resources.js"></script>
+</body>
 </html>
