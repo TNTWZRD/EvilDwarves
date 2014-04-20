@@ -8,13 +8,13 @@ EvilDwarves
 </head>
 
 <body>
-<h1>This Game Requires A Console. I Suggest Chrome For That! :)</h1>
+<h1>This Game Currently Requires A Console. I Suggest Chrome For That! :)</h1>
 
 <table id="status">
 <td>
 <table border="1px" padding="2px" style="text-align: center;">
 <tr>
-<th> Item: </th>
+<th> Item: </th> 
 <th> Count: </th>
 </tr>
 <tr>
@@ -39,16 +39,40 @@ EvilDwarves
 </tr>
 <tr>
 <td> None: </td>
-<td> 1 </td>
+<td id="DwarfNoneCount"> 1 </td>
 </tr>
 <tr>
 <td> Miner: </td>
-<td> 0 </td>
+<td id="DwarfMinerCount"> 0 </td>
 </tr>
 </tr>
 <tr>
 <td> Farmer: </td>
-<td> 0 </td>
+<td id="DwarfFarmerCount"> 0 </td>
+</tr>
+</table>
+</td>
+<td>
+<table border="1px" padding="2px" style="text-align: center;">
+<tr>
+<th> Resource: </th>
+<th> Count: </th>
+</tr>
+<tr>
+<td> Stone </td>
+<td id="StoneCount"> 0 </td>
+</tr>
+<tr>
+<td> Dirt </td>
+<td id="DirtCount"> 0 </td>
+</tr>
+<tr>
+<td> Iron </td>
+<td id="IronCount"> 0 </td>
+</tr>
+<tr>
+<td> Gold </td>
+<td id="GoldCount"> 0 </td>
 </tr>
 </table>
 </td>
