@@ -78,9 +78,8 @@ EvilDwarves
 </td>
 <table>
 
-
-
 <script src="main.js"></script>
+<script src="tools.js"></script>
 <script src="dwarves.js"></script>
 <script src="resources.js"></script>
 </body>
