@@ -1,0 +1,13 @@
+"newDwarf()" : Create A New Dwarf
+
+## Occupations:
+"newMiner()" : Create A New Miner Dwarf
+"newDwarf()" : Create A New Farmer Dwarf
+"newDwarf()" : Create A New Logger Dwarf
+
+## Tools: 
+"newPick()" : Create A New Pick
+"newHoe()" : Create A New Hoe
+"newAxe()" : Create A New Axe
+
+## Other:

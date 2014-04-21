@@ -1,5 +1,4 @@
 Main = {};
-Main.Runnning = true;
 
 Main.RoundFloat = function(n) {
     return (Math.round(n * 10) / 10).toFixed(2);
@@ -56,7 +55,8 @@ Update = function(){
 }
 
 Main.InitGame = function(){
-	
+	if(localStorage.getItem("ResObject") != null){LoadRes();}
+	Update();	
 }
 
 Main.InitGame();

@@ -16,6 +16,9 @@ CI.NewIn = function(){
 	if(CommandIn == "newFarmer()"){
 		CI.Commands.NewFarmer();
 	}
+	if(CommandIn == "newLogger()"){
+		CI.Commands.NewLogger();
+	}
 	
 	//Tool Commands
 	if(CommandIn == "buildPick()"){
@@ -23,6 +26,9 @@ CI.NewIn = function(){
 	}
 	if(CommandIn == "buildHoe()"){
 		CI.Commands.BuildHoe();
+	}
+	if(CommandIn == "buildAxe()"){
+		CI.Commands.BuildAxe();
 	}
 }
 
@@ -42,10 +48,17 @@ CI.Commands.NewFarmer = function(){
 	Dwarves.New.Farmer(1);
 }
 
+CI.Commands.NewLogger = function(){
+	Dwarves.New.Logger(1);
+}
+
 //Tool Commands
 CI.Commands.BuildPick = function(){
 	Tools.New.Pick(1);
 }
 CI.Commands.BuildHoe = function(){
 	Tools.New.Hoe(1);
+}
+CI.Commands.BuildAxe = function(){
+	Tools.New.Axe(1);
 }

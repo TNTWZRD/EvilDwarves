@@ -44,3 +44,4 @@ LoadRes = function(){
 }
 
 if(localStorage.getItem("ResObject") != null){LoadRes();}
+Update();

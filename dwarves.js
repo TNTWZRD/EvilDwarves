@@ -17,12 +17,13 @@ Dwarves.Data.Occupation.Shepherd = 1;
 Dwarves.Data.Occupation.Rancher = 1;
 Dwarves.Data.Occupation.Cook = 1;
 
-setInterval('Dwarves.RunAll()', 1000);
+setInterval('Dwarves.RunAll()', 2000);
 setInterval('SaveRes()', 60000);
 
 Dwarves.RunAll = function(){
 	Dwarves.Miner.Mine();
 	Dwarves.Farmer.Farm();
+	Dwarves.Logger.Logg();
 }
 
 Dwarves.New.Dwarf = function(num){
@@ -93,5 +94,27 @@ Dwarves.New.Farmer = function(num){
 		Update();
 	}else{
 		alert("Error New Farming Dwarf Requires: 2 Dirt, 1 Hoe, and 1 New Dwarf");
+	}
+}
+
+//Logging Dwarf
+
+Dwarves.Logger.Logg = function(){
+	if(Dwarves.Data.Occupation.Logger >= 1){
+		Res.Item.Wood += (Dwarves.Data.Occupation.Logger / 5);
+		Update();
+	}
+}
+
+Dwarves.New.Logger = function(num){
+	if(Dwarves.Data.Occupation.None >= 1*num && Res.Item.Axe >= 1*num && Res.Item.Wood >= 2*num){
+		Res.Item.Wood -= 2*num;
+		Dwarves.Data.Occupation.None -= 1*num;
+		Dwarves.Data.Occupation.Logger += 1*num;
+		Res.Item.Axe -= 1*num;
+		console.log("New Dwarf Logger Created!");
+		Update();
+	}else{
+		alert("Error New Logger Dwarf Requires: 2 Wood, 1 Axe, and 1 New Dwarf");
 	}
 }
