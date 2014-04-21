@@ -1,10 +1,18 @@
-<!DOCTYPE html>
-
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-<title>
-EvilDwarves
-</title>
+<title>Evil Dwarves</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="author" content="Corbin Matschull">
+<meta name="keywords" content="Art,Code,Team">
+<meta name="robots" content="index, nofollow">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="icon" type="image/png" href="images/FaviCon.png">
+<!--<link rel="stylesheet" type="text/css" href="screen.css">-->
+<link rel="stylesheet" type="text/css" href="main-style.css>
+<script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/js/page_context.js"></script>
 </head>
 
 <body>
@@ -27,7 +35,9 @@ EvilDwarves
 
 <table id="status">
 <td>
-<table border="1px" padding="2px" style="text-align: center;">
+
+
+<table id="dwarf-table" border="1px" padding="2px" style="text-align: center;">
 <tr>
 <th> Item: </th> 
 <th> Count: </th>
@@ -70,6 +80,8 @@ EvilDwarves
 </table>
 </td>
 <td>
+
+
 <table border="1px" padding="2px" style="text-align: center;">
 <tr>
 <th> Dwarf Occupation: </th>
@@ -115,6 +127,8 @@ EvilDwarves
 </table>
 </td>
 <td>
+
+
 <table border="1px" padding="2px" style="text-align: center;">
 <tr>
 <th> Resource: </th>
