@@ -24,3 +24,11 @@ $(function(){
 		});
 	}
 );
+
+$(function(){
+		$("#ConsoleIn").click(function(event) {
+			event.preventDefault();
+			CI.NewIn();
+		});
+	}
+);

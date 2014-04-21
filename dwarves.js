@@ -18,6 +18,8 @@ Dwarves.New.Dwarf = function(num){
 		Dwarves.Data.Occupation.None += 1*num;
 		Res.Alive.Dwarves += 1*num;
 		alert("Created Dwarf!");
+	}else{
+		alert("Error New Dwarf Requires: 20 Stone & 0.5 Gold");
 	}
 }
 

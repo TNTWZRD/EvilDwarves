@@ -4,7 +4,7 @@ Res.Item = {};
 Res.Food = {};
 
 
-Res.Alive.Dwarves = 3;
+Res.Alive.Dwarves = 5;
 
 Res.Item.Pick = 2;
 Res.Item.Hoe = 0;
