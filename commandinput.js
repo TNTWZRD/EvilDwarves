@@ -25,6 +25,15 @@ CI.NewIn = function(){
 	if(CommandIn == "newFisher()"){
 		CI.Commands.NewFisher();
 	}
+	if(CommandIn == "newShepherd()"){
+		CI.Commands.NewShepherd();
+	}
+	if(CommandIn == "newRancher()"){
+		CI.Commands.NewRancher();
+	}
+	if(CommandIn == "newCook()"){
+		CI.Commands.NewCook();
+	}
 	
 	//Tool Commands
 	if(CommandIn == "buildPick()"){
@@ -41,6 +50,15 @@ CI.NewIn = function(){
 	}
 	if(CommandIn == "buildFishingRod()"){
 		CI.Commands.BuildFishingRod();
+	}
+	if(CommandIn == "buildShears()"){
+		CI.Commands.BuildShears();
+	}
+	if(CommandIn == "buildCane()"){
+		CI.Commands.BuildCane();
+	}
+	if(CommandIn == "buildStove()"){
+		CI.Commands.BuildStove();
 	}
 }
 
@@ -72,6 +90,18 @@ CI.Commands.NewFisher = function(){
 	Dwarves.New.Fisher(1);
 }
 
+CI.Commands.NewShepherd = function(){
+	Dwarves.New.Shepherd(1);
+}
+
+CI.Commands.NewRancher = function(){
+	Dwarves.New.Rancher(1);
+}
+
+CI.Commands.NewCook = function(){
+	Dwarves.New.Cook(1);
+}
+
 //Tool Commands
 CI.Commands.BuildPick = function(){
 	Tools.New.Pick(1);
@@ -87,4 +117,13 @@ CI.Commands.BuildBow = function(){
 }
 CI.Commands.BuildFishingRod = function(){
 	Tools.New.FishingRod(1);
+}
+CI.Commands.BuildShears = function(){
+	Tools.New.Shears(1);
+}
+CI.Commands.BuildCane = function(){
+	Tools.New.Cane(1);
+}
+CI.Commands.BuildStove = function(){
+	Tools.New.Stove(1);
 }

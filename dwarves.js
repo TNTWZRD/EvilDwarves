@@ -21,7 +21,7 @@ Dwarves.Data.Occupation.Shepherd = 0;
 Dwarves.Data.Occupation.Rancher = 0;
 Dwarves.Data.Occupation.Cook = 0;
 
-setInterval('Dwarves.RunAll()', 2000);
+setInterval('Dwarves.RunAll()', 1000);
 setInterval('SaveRes()', 60000);
 
 Dwarves.RunAll = function(){
@@ -31,14 +31,20 @@ Dwarves.RunAll = function(){
 		Dwarves.Logger.Logg();
 		Dwarves.Hunter.Hunt();
 		Dwarves.Fisher.Fish();
-		Res.Item.Meat -= (0.02 * Res.Alive.Dwarves)*(Dwarves.Data.Occupation.Cook / 6);
+		Dwarves.Shepherd.Herd();
+		Dwarves.Rancher.Ranch();
+		Dwarves.Cook.Cook();
+		Res.Item.Meat -= (0.03 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6);
 	}else if(Res.Item.Fish >> 0){
 		Dwarves.Miner.Mine();
 		Dwarves.Farmer.Farm();
 		Dwarves.Logger.Logg();
 		Dwarves.Hunter.Hunt();
 		Dwarves.Fisher.Fish();
-		Res.Item.Fish -= (0.04 * Res.Alive.Dwarves)*(Dwarves.Data.Occupation.Cook / 6);
+		Dwarves.Shepherd.Herd();
+		Dwarves.Rancher.Ranch();
+		Dwarves.Cook.Cook();
+		Res.Item.Fish -= (0.5 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6);
 	}else{
 		alert("You Are Out Of Food.... You Failed Your Mission To Survive. Good Luck Next Time! ");
 		localStorage.clear();
@@ -143,7 +149,7 @@ Dwarves.New.Logger = function(num){
 
 Dwarves.Hunter.Hunt = function(){
 	if(Dwarves.Data.Occupation.Hunter >= 1){
-		Res.Item.Meat += (Dwarves.Data.Occupation.Hunter / 5);
+		Res.Item.Meat += (Dwarves.Data.Occupation.Hunter / 4);
 		Update();
 	}
 }
@@ -185,9 +191,9 @@ Dwarves.New.Fisher = function(num){
 
 //Shepherd Dwarf
 
-Dwarves.Shepheard.Heard= function(){
+Dwarves.Shepherd.Herd = function(){
 	if(Dwarves.Data.Occupation.Shepherd >= 1){
-		Res.Item.Wool += (Dwarves.Data.Occupation.Fisher / 10);
+		Res.Item.Wool += (Dwarves.Data.Occupation.Shepherd / 10);
 		Update();
 	}
 }
@@ -203,5 +209,50 @@ Dwarves.New.Shepherd = function(num){
 		Update();
 	}else{
 		alert("Error New Shepherd Dwarf Requires: 2 wool, 1 Cane, 1 Shear, and 1 New Dwarf");
+	}
+}
+
+//Rancher Dwarf
+
+Dwarves.Rancher.Ranch = function(){
+	if(Dwarves.Data.Occupation.Rancher >= 1){
+		Res.Item.Meat += (Dwarves.Data.Occupation.Rancher / 10);
+		Res.Item.Leather += (Dwarves.Data.Occupation.Rancher / 10);
+		Update();
+	}
+}
+
+Dwarves.New.Rancher = function(num){
+	if(Dwarves.Data.Occupation.None >= 1*num && Res.Item.Leather >= 1*num && Res.Item.Meat >= 2*num){
+		Res.Item.Meat -= 2*num;
+		Dwarves.Data.Occupation.None -= 1*num;
+		Dwarves.Data.Occupation.Rancher += 1*num;
+		Res.Item.Leather -= 1*num;
+		console.log("New Dwarf Rancher Created!");
+		Update();
+	}else{
+		alert("Error New Rancher Dwarf Requires: 2 Meat, 1 Leather, and 1 New Dwarf");
+	}
+}
+
+//Cook Dwarf
+
+Dwarves.Cook.Cook = function(){
+	if(Dwarves.Data.Occupation.Cook >= 1){
+		Res.Item.Meat += (Dwarves.Data.Occupation.Rancher / 50);
+		Update();
+	}
+}
+
+Dwarves.New.Cook = function(num){
+	if(Dwarves.Data.Occupation.None >= 1*num && Res.Item.Stove >= 1*num && Res.Item.Meat >= 2*num){
+		Res.Item.Meat -= 2*num;
+		Dwarves.Data.Occupation.None -= 1*num;
+		Dwarves.Data.Occupation.Cook += 1*num;
+		Res.Item.Stove -= 1*num;
+		console.log("New Dwarf Cook Created!");
+		Update();
+	}else{
+		alert("Error New Cook Dwarf Requires: 2 Meat, 1 Stove, and 1 New Dwarf");
 	}
 }
