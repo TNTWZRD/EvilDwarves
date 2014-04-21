@@ -22,30 +22,30 @@ Dwarves.New.Dwarf = function(num){
 }
 
 Dwarves.Miner.Mine = function(){
-	Main.Update();
+	Update();
 	if(Dwarves.Data.Occupation.Miner >= 1){
 		if(Math.floor(Math.random() * 14) + 1 == 1){
-			Res.Item.Iron += (Dwarves.Data.Occupation.Miner / 5)+(Res.Alive.Dwarves/10);
-			Main.Update()
+			Res.Item.Iron += (Dwarves.Data.Occupation.Miner / 6);
+			Update()
 		}else if(Math.floor(Math.random() * 20) + 1 == 1){
-			Res.Item.Gold += (Dwarves.Data.Occupation.Miner / 5)+(Res.Alive.Dwarves/10);
-			Main.Update();
+			Res.Item.Gold += (Dwarves.Data.Occupation.Miner / 6);
+			Update();
 		}else{
-			Res.Item.Stone += (Dwarves.Data.Occupation.Miner / 5)+(Res.Alive.Dwarves/10);
-			Main.Update();
+			Res.Item.Stone += (Dwarves.Data.Occupation.Miner / 6);
+			Update();
 		}
-		Main.Update();
+		Update();
 	}
 }
 
 Dwarves.New.Miner = function(num){
 	if(Dwarves.Data.Occupation.None >= 1*num && Res.Item.Pick >= 1*num && Res.Item.Iron >= 2*num){
-		Res.Item.Iron -= 5*num;
+		Res.Item.Iron -= 2*num;
 		Dwarves.Data.Occupation.None -= 1*num;
 		Dwarves.Data.Occupation.Miner += 1*num;
 		Res.Item.Pick -= 1*num;
 		console.log("New Dwarf Miner Created!");
-		Main.Update();
+		Update();
 		Dwarves.Miner.Mine();
 	}
 }

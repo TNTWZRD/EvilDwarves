@@ -9,7 +9,13 @@ EvilDwarves
 
 <body>
 <script src="Jquerry.min.js"></script>
-<button type="button" id="SaveAll">Save All</button><button type="button" id="LoadAll">Load All</button><a href="commands.txt" traget="_BLANK">Commands List</a>
+<script src="main.js"></script>
+<script src="tools.js"></script>
+<script src="dwarves.js"></script>
+<script src="clickscript.js"></script>
+<script src="dwarves.js"></script>
+<script src="resources.js"></script>
+<button type="button" id="SaveAll">Save All</button><button type="button" id="LoadAll">Load All</button><button type="button" id="ClearSave">Clear Save</button><a href="commands.txt" traget="_BLANK">Commands List</a>
 <h1>This Game Currently Requires A Console. I Suggest Chrome For That! :)</h1>
 
 <table id="status">
@@ -21,15 +27,15 @@ EvilDwarves
 </tr>
 <tr>
 <td> Dwarves </td>
-<td id="DwarvesCount"> 1 </td>
+<td id="DwarvesCount"> 1.00 </td>
 </tr>
 <tr>
 <td> Pickaxes </td>
-<td id="PickaxesCount"> 2 </td>
+<td id="PickaxesCount"> 2.00 </td>
 </tr>
 <tr>
 <td> Hoes </td>
-<td id="HoeCount"> 0 </td>
+<td id="HoeCount"> 0.00 </td>
 </tr>
 </table>
 </td>
@@ -41,16 +47,16 @@ EvilDwarves
 </tr>
 <tr>
 <td> None: </td>
-<td id="DwarfNoneCount"> 1 </td>
+<td id="DwarfNoneCount"> 1.00 </td>
 </tr>
 <tr>
 <td> Miner: </td>
-<td id="DwarfMinerCount"> 0 </td>
+<td id="DwarfMinerCount"> 1.00 </td>
 </tr>
 </tr>
 <tr>
 <td> Farmer: </td>
-<td id="DwarfFarmerCount"> 0 </td>
+<td id="DwarfFarmerCount"> 1.00 </td>
 </tr>
 </table>
 </td>
@@ -62,28 +68,23 @@ EvilDwarves
 </tr>
 <tr>
 <td> Stone </td>
-<td id="StoneCount"> 0 </td>
+<td id="StoneCount"> 0.00 </td>
 </tr>
 <tr>
 <td> Dirt </td>
-<td id="DirtCount"> 0 </td>
+<td id="DirtCount"> 0.00 </td>
 </tr>
 <tr>
 <td> Iron </td>
-<td id="IronCount"> 0 </td>
+<td id="IronCount"> 0.00 </td>
 </tr>
 <tr>
 <td> Gold </td>
-<td id="GoldCount"> 0 </td>
+<td id="GoldCount"> 0.00 </td>
 </tr>
 </table>
 </td>
 <table>
 
-<script src="main.js"></script>
-<script src="tools.js"></script>
-<script src="dwarves.js"></script>
-<script src="clickscript.js"></script>
-<script src="resources.js"></script>
 </body>
 </html>

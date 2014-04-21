@@ -4,7 +4,7 @@ Res.Item = {};
 Res.Food = {};
 
 
-Res.Alive.Dwarves = 1;
+Res.Alive.Dwarves = 3;
 
 Res.Item.Pick = 2;
 Res.Item.Hoe = 0;
@@ -19,15 +19,17 @@ SaveRes = function(){
 	localStorage.setItem('ResObject', JSON.stringify(Res));
 	localStorage.setItem('DwarvesObject', JSON.stringify(Dwarves.Data));
 	console.log("Saved");
-	Main.Update();
+	Update();
 }
 
 LoadRes = function(){
-	Res = JSON.parse(localStorage.getItem('ResObject'));
-	Dwarves.Data = JSON.parse(localStorage.getItem('DwarvesObject'));
-	console.log(Dwarves);
-	console.log("Loaded");
-	Main.Update();
+	if(localStorage.getItem("ResObject") != null){
+		Res = JSON.parse(localStorage.getItem('ResObject'));
+		Dwarves.Data = JSON.parse(localStorage.getItem('DwarvesObject'));
+		console.log(Dwarves);
+		console.log("Loaded");
+		Update();
+	}
 }
 
-LoadRes();
+if(localStorage.getItem("ResObject") != null){LoadRes();}

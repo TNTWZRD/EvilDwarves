@@ -13,3 +13,14 @@ $(function(){
 		});
 	}
 );
+
+$(function(){
+		$("#ClearSave").click(function(event) {
+			event.preventDefault();
+			if(confirm("Are You Sure You Want To Erase Your Save?")){
+			localStorage.clear();
+			window.location.reload();
+			}
+		});
+	}
+);
