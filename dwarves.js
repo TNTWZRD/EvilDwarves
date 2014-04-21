@@ -7,6 +7,9 @@ Dwarves.Farmer = {};
 Dwarves.Logger = {};
 Dwarves.Hunter = {};
 Dwarves.Fisher = {};
+Dwarves.Shepherd = {};
+Dwarves.Rancher = {};
+Dwarves.Cook = {};
 
 Dwarves.Data.Occupation.None = 10;
 Dwarves.Data.Occupation.Miner = 0;
@@ -28,14 +31,14 @@ Dwarves.RunAll = function(){
 		Dwarves.Logger.Logg();
 		Dwarves.Hunter.Hunt();
 		Dwarves.Fisher.Fish();
-		Res.Item.Meat -= 0.02 * Res.Alive.Dwarves;
+		Res.Item.Meat -= (0.02 * Res.Alive.Dwarves)*(Dwarves.Data.Occupation.Cook / 6);
 	}else if(Res.Item.Fish >> 0){
 		Dwarves.Miner.Mine();
 		Dwarves.Farmer.Farm();
 		Dwarves.Logger.Logg();
 		Dwarves.Hunter.Hunt();
 		Dwarves.Fisher.Fish();
-		Res.Item.Fish -= 0.02 * Res.Alive.Dwarves;
+		Res.Item.Fish -= (0.04 * Res.Alive.Dwarves)*(Dwarves.Data.Occupation.Cook / 6);
 	}else{
 		alert("You Are Out Of Food.... You Failed Your Mission To Survive. Good Luck Next Time! ");
 		localStorage.clear();
@@ -177,5 +180,28 @@ Dwarves.New.Fisher = function(num){
 		Update();
 	}else{
 		alert("Error New Fisher Dwarf Requires: 2 Fish, 1 Fishing Rod, and 1 New Dwarf");
+	}
+}
+
+//Shepherd Dwarf
+
+Dwarves.Shepheard.Heard= function(){
+	if(Dwarves.Data.Occupation.Shepherd >= 1){
+		Res.Item.Wool += (Dwarves.Data.Occupation.Fisher / 10);
+		Update();
+	}
+}
+
+Dwarves.New.Shepherd = function(num){
+	if(Dwarves.Data.Occupation.None >= 1*num && Res.Item.Shears >= 1*num && Res.Item.Cane >= 1*num && Res.Item.Wool >= 2*num){
+		Res.Item.Wool -= 2*num;
+		Dwarves.Data.Occupation.None -= 1*num;
+		Dwarves.Data.Occupation.Shepherd += 1*num;
+		Res.Item.Cane -= 1*num;
+		Res.Item.Shears -= 1*num;
+		console.log("New Dwarf Shepherd Created!");
+		Update();
+	}else{
+		alert("Error New Shepherd Dwarf Requires: 2 wool, 1 Cane, 1 Shear, and 1 New Dwarf");
 	}
 }
