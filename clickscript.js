@@ -32,3 +32,14 @@ $(function(){
 		});
 	}
 );
+
+$(function(){
+		$("#Pause").click(function(event) {
+			if(Dwarves.Pause == true){
+				Dwarves.Pause = false;
+			}else{
+				Dwarves.Pause = true;
+			}
+		});
+	}
+);

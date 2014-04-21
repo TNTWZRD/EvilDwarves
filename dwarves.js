@@ -21,10 +21,12 @@ Dwarves.Data.Occupation.Shepherd = 0;
 Dwarves.Data.Occupation.Rancher = 0;
 Dwarves.Data.Occupation.Cook = 0;
 
+Dwarves.Pause = false;
 setInterval('Dwarves.RunAll()', 1000);
 setInterval('SaveRes()', 60000);
 
 Dwarves.RunAll = function(){
+	if(Dwarves.Pause != true){
 	if(Res.Item.Meat >> 0){
 		Dwarves.Miner.Mine();
 		Dwarves.Farmer.Farm();
@@ -49,6 +51,7 @@ Dwarves.RunAll = function(){
 		alert("You Are Out Of Food.... You Failed Your Mission To Survive. Good Luck Next Time! ");
 		localStorage.clear();
 		window.location.reload();
+	}
 	}
 }
 
