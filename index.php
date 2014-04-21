@@ -24,6 +24,7 @@
 <a type="button" id="LoadAll" class="clearfix button">Load All</a>
 <a type="button" id="ClearSave" class="clearfix button">Clear Save</a>
 <a type="button" id="ConsoleIn" class="clearfix button">Enter Command</a>
+<a type="button" id="Pause" class="clearfix button">Pause</a>
 </br>
 <a href="commands.txt" target="_blank">Commands List</a>
 <a href="recipes.txt" traget="_blank">Recipe List</a>
