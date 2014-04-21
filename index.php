@@ -8,6 +8,8 @@ EvilDwarves
 </head>
 
 <body>
+<script src="Jquerry.min.js"></script>
+<button type="button" id="SaveAll">Save All</button><button type="button" id="LoadAll">Load All</button>
 <h1>This Game Currently Requires A Console. I Suggest Chrome For That! :)</h1>
 
 <table id="status">
@@ -81,6 +83,7 @@ EvilDwarves
 <script src="main.js"></script>
 <script src="tools.js"></script>
 <script src="dwarves.js"></script>
+<script src="clickscript.js"></script>
 <script src="resources.js"></script>
 </body>
 </html>

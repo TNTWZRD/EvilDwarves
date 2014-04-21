@@ -13,13 +13,16 @@ Res.Item.Dirt = 0;
 Res.Item.Iron = 0;
 Res.Item.Gold = 0;
 
-saveAll = function(){
-CodeAlive = btoa(Res.Alive);
-CodeItem = btoa(Res.Item);
-CodeFood = btoa(Res.Food);
-CodeTogether = CodeAlive + CodeItem + code
+SaveRes = function(){
+	localStorage.setItem('ResObj', JSON.stringify(Res));
+	localStorage.setItem('DwarvesObj', JSON.stringify(Dwarves));
+	console.log("Saved");
+	Main.Update();
 }
 
-loadAll = function(){
-Res = atob(prompt("Enter Code Please"));
+LoadRes = function(){
+	Res = JSON.parse(localStorage.getItem('ResObj'));
+	Dwarves = JSON.parse(localStorage.getItem('DwarvesObj'));
+	console.log("Loaded");
+	Main.Update();
 }
