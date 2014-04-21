@@ -31,14 +31,28 @@ Update = function(){
 	// Update Resources Table
 	
 	if(Main.RoundFloat(Res.Item.Stone) >= 64){Main.Stone = Main.RoundFloat(Res.Item.Stone/64) + " X 64";}else{Main.Stone = Main.RoundFloat(Res.Item.Stone);}
+	if(Main.RoundFloat(Res.Item.Coal) >= 64){Main.Coal = Main.RoundFloat(Res.Item.Coal/64) + " X 64";}else{Main.Coal = Main.RoundFloat(Res.Item.Coal);}
 	if(Main.RoundFloat(Res.Item.Dirt) >= 64){Main.Dirt = Main.RoundFloat(Res.Item.Dirt/64) + " X 64";}else{Main.Dirt = Main.RoundFloat(Res.Item.Dirt);}
 	if(Main.RoundFloat(Res.Item.Iron) >= 64){Main.Iron = Main.RoundFloat(Res.Item.Iron/64) + " X 64";}else{Main.Iron = Main.RoundFloat(Res.Item.Iron);}
 	if(Main.RoundFloat(Res.Item.Gold) >= 64){Main.Gold = Main.RoundFloat(Res.Item.Gold/64) + " X 64";}else{Main.Gold = Main.RoundFloat(Res.Item.Gold);}
+	if(Main.RoundFloat(Res.Item.Wood) >= 64){Main.Wood = Main.RoundFloat(Res.Item.Wood/64) + " X 64";}else{Main.Wood = Main.RoundFloat(Res.Item.Wood);}
+	if(Main.RoundFloat(Res.Item.Brick) >= 64){Main.Brick = Main.RoundFloat(Res.Item.Brick/64) + " X 64";}else{Main.Brick = Main.RoundFloat(Res.Item.Brick);}
+	if(Main.RoundFloat(Res.Item.Meat) >= 64){Main.Meat = Main.RoundFloat(Res.Item.Meat/64) + " X 64";}else{Main.Meat = Main.RoundFloat(Res.Item.Meat);}
+	if(Main.RoundFloat(Res.Item.Wheat) >= 64){Main.Wheat = Main.RoundFloat(Res.Item.Wheat/64) + " X 64";}else{Main.Wheat = Main.RoundFloat(Res.Item.Wheat);}
+	if(Main.RoundFloat(Res.Item.Bread) >= 64){Main.Bread = Main.RoundFloat(Res.Item.Bread/64) + " X 64";}else{Main.Bread = Main.RoundFloat(Res.Item.Bread);}
+	if(Main.RoundFloat(Res.Item.Wool) >= 64){Main.Wool = Main.RoundFloat(Res.Item.Wool/64) + " X 64";}else{Main.Wool = Main.RoundFloat(Res.Item.Wool);}
 	
 	document.getElementById("StoneCount").innerHTML = Main.Stone;
+	document.getElementById("CoalCount").innerHTML = Main.Coal;
 	document.getElementById("DirtCount").innerHTML = Main.Dirt;
 	document.getElementById("IronCount").innerHTML = Main.Iron;
 	document.getElementById("GoldCount").innerHTML = Main.Gold;
+	document.getElementById("WoodCount").innerHTML = Main.Wood;
+	document.getElementById("BrickCount").innerHTML = Main.Brick;
+	document.getElementById("MeatCount").innerHTML = Main.Meat;
+	document.getElementById("WheatCount").innerHTML = Main.Wheat;
+	document.getElementById("BreadCount").innerHTML = Main.Bread;
+	document.getElementById("WoolCount").innerHTML = Main.Wool;
 }
 
 Main.InitGame = function(){

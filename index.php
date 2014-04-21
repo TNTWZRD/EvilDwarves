@@ -34,7 +34,7 @@ EvilDwarves
 </tr>
 <tr>
 <td> Dwarves </td>
-<td id="DwarfCount"> 8.00 </td>
+<td id="DwarfCount"> 9.00 </td>
 </tr>
 <tr>
 <td> Pickaxes </td>
@@ -62,6 +62,10 @@ EvilDwarves
 <tr>
 <td> Cane </td>
 <td id="CaneCount"> 2.00 </td>
+</tr>
+<tr>
+<td> Stove </td>
+<td id="StoveCount"> 2.00 </td>
 </tr>
 </table>
 </td>
@@ -96,11 +100,17 @@ EvilDwarves
 <td> Fisher: </td>
 <td id="DwarfFisherCount"> 1.00 </td>
 </tr>
+<tr>
 <td> Shepherd: </td>
 <td id="DwarfShepherdCount"> 1.00 </td>
 </tr>
+<tr>
 <td> Rancher: </td>
 <td id="DwarfRancherCount"> 1.00 </td>
+</tr>
+<tr>
+<td> Cook: </td>
+<td id="DwarfCookCount"> 1.00 </td>
 </tr>
 </table>
 </td>
@@ -115,6 +125,10 @@ EvilDwarves
 <td id="StoneCount"> 0.00 </td>
 </tr>
 <tr>
+<td> Coal </td>
+<td id="CoalCount"> 0.00 </td>
+</tr>
+<tr>
 <td> Dirt </td>
 <td id="DirtCount"> 0.00 </td>
 </tr>
@@ -125,6 +139,30 @@ EvilDwarves
 <tr>
 <td> Gold </td>
 <td id="GoldCount"> 0.00 </td>
+</tr>
+<tr>
+<td> Wood </td>
+<td id="WoodCount"> 0.00 </td>
+</tr>
+<tr>
+<td> Brick </td>
+<td id="BrickCount"> 0.00 </td>
+</tr>
+<tr>
+<td> Meat </td>
+<td id="MeatCount"> 0.00 </td>
+</tr>
+<tr>
+<td> Wheat </td>
+<td id="WheatCount"> 0.00 </td>
+</tr>
+<tr>
+<td> Bread </td>
+<td id="BreadCount"> 0.00 </td>
+</tr>
+<tr>
+<td> Wool </td>
+<td id="WoolCount"> 0.00 </td>
 </tr>
 </table>
 </td>

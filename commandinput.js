@@ -13,6 +13,9 @@ CI.NewIn = function(){
 	if(CommandIn == "newMiner()"){
 		CI.Commands.NewMiner();
 	}
+	if(CommandIn == "newFarmer()"){
+		CI.Commands.NewFarmer();
+	}
 	
 	//Tool Commands
 	if(CommandIn == "buildPick()"){
@@ -33,6 +36,10 @@ CI.Commands.NewDwarf = function(){
 
 CI.Commands.NewMiner = function(){
 	Dwarves.New.Miner(1);
+}
+
+CI.Commands.NewFarmer = function(){
+	Dwarves.New.Farmer(1);
 }
 
 //Tool Commands
