@@ -19,6 +19,12 @@ CI.NewIn = function(){
 	if(CommandIn == "newLogger()"){
 		CI.Commands.NewLogger();
 	}
+	if(CommandIn == "newHunter()"){
+		CI.Commands.NewHunter();
+	}
+	if(CommandIn == "newFisher()"){
+		CI.Commands.NewFisher();
+	}
 	
 	//Tool Commands
 	if(CommandIn == "buildPick()"){
@@ -29,6 +35,12 @@ CI.NewIn = function(){
 	}
 	if(CommandIn == "buildAxe()"){
 		CI.Commands.BuildAxe();
+	}
+	if(CommandIn == "buildBow()"){
+		CI.Commands.BuildBow();
+	}
+	if(CommandIn == "buildFishingRod()"){
+		CI.Commands.BuildFishingRod();
 	}
 }
 
@@ -52,6 +64,14 @@ CI.Commands.NewLogger = function(){
 	Dwarves.New.Logger(1);
 }
 
+CI.Commands.NewHunter = function(){
+	Dwarves.New.Hunter(1);
+}
+
+CI.Commands.NewFisher = function(){
+	Dwarves.New.Fisher(1);
+}
+
 //Tool Commands
 CI.Commands.BuildPick = function(){
 	Tools.New.Pick(1);
@@ -61,4 +81,10 @@ CI.Commands.BuildHoe = function(){
 }
 CI.Commands.BuildAxe = function(){
 	Tools.New.Axe(1);
+}
+CI.Commands.BuildBow = function(){
+	Tools.New.Bow(1);
+}
+CI.Commands.BuildFishingRod = function(){
+	Tools.New.FishingRod(1);
 }

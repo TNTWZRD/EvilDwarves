@@ -153,6 +153,10 @@ EvilDwarves
 <td id="MeatCount"> 0.00 </td>
 </tr>
 <tr>
+<td> Fish </td>
+<td id="FishCount"> 0.00 </td>
+</tr>
+<tr>
 <td> Wheat </td>
 <td id="WheatCount"> 0.00 </td>
 </tr>

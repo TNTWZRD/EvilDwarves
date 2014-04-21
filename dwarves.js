@@ -6,24 +6,41 @@ Dwarves.Miner = {};
 Dwarves.Farmer = {};
 Dwarves.Logger = {};
 Dwarves.Hunter = {};
+Dwarves.Fisher = {};
 
-Dwarves.Data.Occupation.None = 1;
-Dwarves.Data.Occupation.Miner = 1;
-Dwarves.Data.Occupation.Farmer = 1;
-Dwarves.Data.Occupation.Logger = 1;
-Dwarves.Data.Occupation.Hunter = 1;
-Dwarves.Data.Occupation.Fisher = 1;
-Dwarves.Data.Occupation.Shepherd = 1;
-Dwarves.Data.Occupation.Rancher = 1;
-Dwarves.Data.Occupation.Cook = 1;
+Dwarves.Data.Occupation.None = 10;
+Dwarves.Data.Occupation.Miner = 0;
+Dwarves.Data.Occupation.Farmer = 0;
+Dwarves.Data.Occupation.Logger = 0;
+Dwarves.Data.Occupation.Hunter = 0;
+Dwarves.Data.Occupation.Fisher = 0;
+Dwarves.Data.Occupation.Shepherd = 0;
+Dwarves.Data.Occupation.Rancher = 0;
+Dwarves.Data.Occupation.Cook = 0;
 
 setInterval('Dwarves.RunAll()', 2000);
 setInterval('SaveRes()', 60000);
 
 Dwarves.RunAll = function(){
-	Dwarves.Miner.Mine();
-	Dwarves.Farmer.Farm();
-	Dwarves.Logger.Logg();
+	if(Res.Item.Meat >> 0){
+		Dwarves.Miner.Mine();
+		Dwarves.Farmer.Farm();
+		Dwarves.Logger.Logg();
+		Dwarves.Hunter.Hunt();
+		Dwarves.Fisher.Fish();
+		Res.Item.Meat -= 0.02 * Res.Alive.Dwarves;
+	}else if(Res.Item.Fish >> 0){
+		Dwarves.Miner.Mine();
+		Dwarves.Farmer.Farm();
+		Dwarves.Logger.Logg();
+		Dwarves.Hunter.Hunt();
+		Dwarves.Fisher.Fish();
+		Res.Item.Fish -= 0.02 * Res.Alive.Dwarves;
+	}else{
+		alert("You Are Out Of Food.... You Failed Your Mission To Survive. Good Luck Next Time! ");
+		localStorage.clear();
+		window.location.reload();
+	}
 }
 
 Dwarves.New.Dwarf = function(num){
@@ -116,5 +133,49 @@ Dwarves.New.Logger = function(num){
 		Update();
 	}else{
 		alert("Error New Logger Dwarf Requires: 2 Wood, 1 Axe, and 1 New Dwarf");
+	}
+}
+
+//Hunting Dwarf
+
+Dwarves.Hunter.Hunt = function(){
+	if(Dwarves.Data.Occupation.Hunter >= 1){
+		Res.Item.Meat += (Dwarves.Data.Occupation.Hunter / 5);
+		Update();
+	}
+}
+
+Dwarves.New.Hunter = function(num){
+	if(Dwarves.Data.Occupation.None >= 1*num && Res.Item.Bow >= 1*num && Res.Item.Meat >= 2*num){
+		Res.Item.Meat -= 2*num;
+		Dwarves.Data.Occupation.None -= 1*num;
+		Dwarves.Data.Occupation.Hunter += 1*num;
+		Res.Item.Bow -= 1*num;
+		console.log("New Dwarf Hunter Created!");
+		Update();
+	}else{
+		alert("Error New Logger Dwarf Requires: 2 Meat, 1 Bow, and 1 New Dwarf");
+	}
+}
+
+//Fishing Dwarf
+
+Dwarves.Fisher.Fish = function(){
+	if(Dwarves.Data.Occupation.Fisher >= 1){
+		Res.Item.Fish += (Dwarves.Data.Occupation.Fisher / 30);
+		Update();
+	}
+}
+
+Dwarves.New.Fisher = function(num){
+	if(Dwarves.Data.Occupation.None >= 1*num && Res.Item.FishingRod >= 1*num && Res.Item.Fish >= 2*num){
+		Res.Item.Fish -= 2*num;
+		Dwarves.Data.Occupation.None -= 1*num;
+		Dwarves.Data.Occupation.Fisher += 1*num;
+		Res.Item.FishingRod -= 1*num;
+		console.log("New Dwarf Fisher Created!");
+		Update();
+	}else{
+		alert("Error New Fisher Dwarf Requires: 2 Fish, 1 Fishing Rod, and 1 New Dwarf");
 	}
 }

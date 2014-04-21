@@ -2,12 +2,21 @@
 
 ## Occupations:
 "newMiner()" : Create A New Miner Dwarf
-"newDwarf()" : Create A New Farmer Dwarf
-"newDwarf()" : Create A New Logger Dwarf
+"newFarmer()" : Create A New Farmer Dwarf
+"newLogger()" : Create A New Logger Dwarf
+"newHunter()" : Create A New Hunter Dwarf
+"newFisher()" : Create A New Fisher Dwarf
+"newShepherd()" : Create A New Shepherd Dwarf
+"newRancher()" : Create A New Rancher Dwarf
+"newCook()" : Create A New Cook Dwarf (Makes Food Last Longer)
 
 ## Tools: 
-"newPick()" : Create A New Pick
-"newHoe()" : Create A New Hoe
-"newAxe()" : Create A New Axe
+"buildPick()" : Create A New Pick
+"buildHoe()" : Create A New Hoe
+"buildAxe()" : Create A New Axe
+"buildBow()" : Create A New Bow
+"buildFishingRod()" : Create A New Fishing Rod
+"buildCane()" : Create A New Cane
+"buildStove()" : Create A New stove
 
 ## Other:
