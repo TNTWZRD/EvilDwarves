@@ -27,25 +27,3 @@ Res.Item.Wheat = 10;
 Res.Item.Bread = 10;
 Res.Item.Coal = 10;
 Res.Item.Wool = 10;
-
-
-
-SaveRes = function(){
-	localStorage.setItem('ResObject', JSON.stringify(Res));
-	localStorage.setItem('DwarvesObject', JSON.stringify(Dwarves.Data));
-	console.log("Saved");
-	Update();
-}
-
-LoadRes = function(){
-	if(localStorage.getItem("ResObject") != null){
-		Res = JSON.parse(localStorage.getItem('ResObject'));
-		Dwarves.Data = JSON.parse(localStorage.getItem('DwarvesObject'));
-		console.log(Dwarves);
-		console.log("Loaded");
-		Update();
-	}
-}
-
-if(localStorage.getItem("ResObject") != null){LoadRes();}
-Update();

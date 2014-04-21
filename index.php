@@ -23,6 +23,7 @@
 <script src="clickscript.js"></script>
 <script src="dwarves.js"></script>
 <script src="resources.js"></script>
+<script src="save-game.js"></script>
 <script src="commandinput.js"></script>
 
 <button type="button" id="SaveAll">Save All</button>
