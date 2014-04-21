@@ -9,6 +9,7 @@ Dwarves.Data.Occupation.Miner = 1;
 Dwarves.Data.Occupation.Farmer = 1;
 
 setInterval('Dwarves.Miner.Mine()', 1000);
+setInterval('SaveRes()', 60000*5);
 
 Dwarves.New.Dwarf = function(num){
 	if(Res.Item.Stone >= 20 *num && Res.Item.Gold >= .5 *num){
@@ -23,14 +24,14 @@ Dwarves.New.Dwarf = function(num){
 Dwarves.Miner.Mine = function(){
 	Main.Update();
 	if(Dwarves.Data.Occupation.Miner >= 1){
-		if(Math.floor(Math.random() * 6) + 1 == 1){
-			Res.Item.Iron += (Dwarves.Data.Occupation.Miner / 5);
+		if(Math.floor(Math.random() * 14) + 1 == 1){
+			Res.Item.Iron += (Dwarves.Data.Occupation.Miner / 5)+(Res.Alive.Dwarves/10);
 			Main.Update()
 		}else if(Math.floor(Math.random() * 20) + 1 == 1){
-			Res.Item.Gold += (Dwarves.Data.Occupation.Miner / 5);
+			Res.Item.Gold += (Dwarves.Data.Occupation.Miner / 5)+(Res.Alive.Dwarves/10);
 			Main.Update();
 		}else{
-			Res.Item.Stone += (Dwarves.Data.Occupation.Miner / 5);
+			Res.Item.Stone += (Dwarves.Data.Occupation.Miner / 5)+(Res.Alive.Dwarves/10);
 			Main.Update();
 		}
 		Main.Update();
