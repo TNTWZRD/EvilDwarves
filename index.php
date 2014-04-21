@@ -11,30 +11,25 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="icon" type="image/png" href="images/FaviCon.png">
 <!--<link rel="stylesheet" type="text/css" href="screen.css">-->
-<link rel="stylesheet" type="text/css" href="main-style.css>
+<link rel="stylesheet" type="text/css" href="main-style.css">
 <script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/js/page_context.js"></script>
 </head>
 
 <body>
-<script src="Jquerry.min.js"></script>
-<script src="main.js"></script>
-<script src="tools.js"></script>
-<script src="dwarves.js"></script>
-<script src="clickscript.js"></script>
-<script src="dwarves.js"></script>
-<script src="resources.js"></script>
-<script src="save-game.js"></script>
-<script src="commandinput.js"></script>
 
-<button type="button" id="SaveAll">Save All</button>
-<button type="button" id="LoadAll">Load All</button>
-<button type="button" id="ClearSave">Clear Save</button>
+<header class="clearfix main-header" role="banner">
+<div class="wrapper clearfix">
 <br>
-<button type="button" id="ConsoleIn">Enter Command</button>
+<a type="button" id="SaveAll" class="clearfix button">Save All</a>
+<a type="button" id="LoadAll" class="clearfix button">Load All</a>
+<a type="button" id="ClearSave" class="clearfix button">Clear Save</a>
+<a type="button" id="ConsoleIn" class="clearfix button">Enter Command</a>
 </br>
-<a href="commands.txt" traget="_BLANK">Commands List</a>   <a href="recipies.txt" traget="_BLANK">Recipie List</a>
-
-<table id="status">
+<a href="commands.txt" target="_blank">Commands List</a>
+<a href="recipes.txt" traget="_blank">Recipe List</a>
+	</div>
+</header>
+<table id="main-table status">
 <td>
 
 
@@ -186,6 +181,13 @@
 </table>
 </td>
 <table>
-
+<script src="Jquerry.min.js"></script>
+<script src="main.js"></script>
+<script src="tools.js"></script>
+<script src="dwarves.js"></script>
+<script src="clickscript.js"></script>
+<script src="dwarves.js"></script>
+<script src="resources.js"></script>
+<script src="commandinput.js"></script>
 </body>
 </html>
