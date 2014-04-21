@@ -10,11 +10,11 @@ Update = function(){
 	
 	// Update Item Table
 	
-	if(Main.RoundFloat(Res.Alive.Dwarves) >= 64){Main.Dwarves = Main.RoundFloat(Res.Alive.Dwarves/64) + " X 64";}else{Main.Dwarves = Main.RoundFloat(Res.Alive.Dwarves);}
+	if(Main.RoundFloat(Res.Alive.Dwarves) >= 64){Main.DwarfCount = Main.RoundFloat(Res.Alive.Dwarves/64) + " X 64";}else{Main.DwarfCount = Main.RoundFloat(Res.Alive.Dwarves);}
 	if(Main.RoundFloat(Res.Item.Pick) >= 64){Main.Pick = Main.RoundFloat(Res.Item.Pick/64) + " X 64";}else{Main.Pick = Main.RoundFloat(Res.Item.Pick);}
 	if(Main.RoundFloat(Res.Item.Hoe) >= 64){Main.Hoe = Main.RoundFloat(Res.Item.Hoe/64) + " X 64";}else{Main.Hoe = Main.RoundFloat(Res.Item.Hoe);}
 	
-	document.getElementById("DwarvesCount").innerHTML = Main.Dwarves;
+	document.getElementById("DwarfCount").innerHTML = Main.DwarfCount;
 	document.getElementById("PickaxesCount").innerHTML = Main.Pick;
 	document.getElementById("HoeCount").innerHTML = Main.Hoe;
 	

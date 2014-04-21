@@ -23,7 +23,7 @@ EvilDwarves
 <br>
 <button type="button" id="ConsoleIn">Enter Command</button>
 </br>
-<a href="commands.txt" traget="_BLANK">Commands List</a>
+<a href="commands.txt" traget="_BLANK">Commands List</a>   <a href="recipies.txt" traget="_BLANK">Recipie List</a>
 
 <table id="status">
 <td>
@@ -34,7 +34,7 @@ EvilDwarves
 </tr>
 <tr>
 <td> Dwarves </td>
-<td id="DwarvesCount"> 5.00 </td>
+<td id="DwarfCount"> 8.00 </td>
 </tr>
 <tr>
 <td> Pickaxes </td>
@@ -55,6 +55,13 @@ EvilDwarves
 <tr>
 <td> FishingRods </td>
 <td id="FishingRodCount"> 2.00 </td>
+</tr>
+<td> Shears</td>
+<td id="ShearCount"> 2.00 </td>
+</tr>
+<tr>
+<td> Cane </td>
+<td id="CaneCount"> 2.00 </td>
 </tr>
 </table>
 </td>
@@ -88,6 +95,12 @@ EvilDwarves
 <tr>
 <td> Fisher: </td>
 <td id="DwarfFisherCount"> 1.00 </td>
+</tr>
+<td> Shepherd: </td>
+<td id="DwarfShepherdCount"> 1.00 </td>
+</tr>
+<td> Rancher: </td>
+<td id="DwarfRancherCount"> 1.00 </td>
 </tr>
 </table>
 </td>

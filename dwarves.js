@@ -9,7 +9,7 @@ Dwarves.Data.Occupation.Miner = 1;
 Dwarves.Data.Occupation.Farmer = 1;
 
 setInterval('Dwarves.Miner.Mine()', 1000);
-setInterval('SaveRes()', 60000*5);
+setInterval('SaveRes()', 60000);
 
 Dwarves.New.Dwarf = function(num){
 	if(Res.Item.Stone >= 20 *num && Res.Item.Gold >= .5 *num){
@@ -17,7 +17,6 @@ Dwarves.New.Dwarf = function(num){
 		Res.Item.Gold -= .5 *num;
 		Dwarves.Data.Occupation.None += 1*num;
 		Res.Alive.Dwarves += 1*num;
-		alert("Created Dwarf!");
 	}else{
 		alert("Error New Dwarf Requires: 20 Stone & 0.5 Gold");
 	}
@@ -49,5 +48,7 @@ Dwarves.New.Miner = function(num){
 		console.log("New Dwarf Miner Created!");
 		Update();
 		Dwarves.Miner.Mine();
+	}else{
+		alert("Error New Mining Dwarf Requires: 2 Iron, 1 Pick, and 1 New Dwarf");
 	}
 }
