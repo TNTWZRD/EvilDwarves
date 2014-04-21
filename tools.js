@@ -1,16 +1,16 @@
 Tools = {};
 Tools.New = {};
 
-Tools.New.Pick = function(){
-	if(Res.Item.Stone >= 20){
-		Res.Item.Pick += 1;
-		Res.Item.Stone -= 20;
+Tools.New.Pick = function(num){
+	if(Res.Item.Stone >= 20 * num){
+		Res.Item.Pick += 1 * num;
+		Res.Item.Stone -= 20 * num;
 	}
 }
 
-Tools.New.Hoe = function(){
-	if(Res.Item.Stone >= 20){
-		Res.Item.Hoe += 1;
-		Res.Item.Stone -= 20;
+Tools.New.Hoe = function(num){
+	if(Res.Item.Stone >= 20 * num){
+		Res.Item.Hoe += 1 * num;
+		Res.Item.Stone -= 20 * num;
 	}
 }

@@ -10,12 +10,12 @@ Dwarves.Data.Occupation.Farmer = 1;
 
 setInterval('Dwarves.Miner.Mine()', 1000);
 
-Dwarves.New.Dwarf = function(){
-	if(Res.Item.Stone >= 20 && Res.Item.Gold >= 2){
-		Res.Item.Stone -= 20;
-		Res.Item.Gold -= 2;
-		Dwarves.Data.Occupation.None += 1;
-		Res.Alive.Dwarves += 1;
+Dwarves.New.Dwarf = function(num){
+	if(Res.Item.Stone >= 20 *num && Res.Item.Gold >= .5 *num){
+		Res.Item.Stone -= 20* num;
+		Res.Item.Gold -= .5 *num;
+		Dwarves.Data.Occupation.None += 1*num;
+		Res.Alive.Dwarves += 1*num;
 		alert("Created Dwarf!");
 	}
 }
@@ -37,12 +37,12 @@ Dwarves.Miner.Mine = function(){
 	}
 }
 
-Dwarves.New.Miner = function(){
-	if(Dwarves.Occupation.None >= 1 && Res.Item.Pick >= 1 && Res.Item.Iron >= 5){
-		Res.Item.Iron -= 5;
-		Dwarves.Data.Occupation.None -= 1;
-		Dwarves.Occupation.Miner += 1;
-		Res.Item.Pick -= 1;
+Dwarves.New.Miner = function(num){
+	if(Dwarves.Data.Occupation.None >= 1*num && Res.Item.Pick >= 1*num && Res.Item.Iron >= 2*num){
+		Res.Item.Iron -= 5*num;
+		Dwarves.Data.Occupation.None -= 1*num;
+		Dwarves.Data.Occupation.Miner += 1*num;
+		Res.Item.Pick -= 1*num;
 		console.log("New Dwarf Miner Created!");
 		Main.Update();
 		Dwarves.Miner.Mine();

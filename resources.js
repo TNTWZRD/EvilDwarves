@@ -14,15 +14,15 @@ Res.Item.Iron = 0;
 Res.Item.Gold = 0;
 
 SaveRes = function(){
-	localStorage.setItem('ResObj', JSON.stringify(Res));
-	localStorage.setItem('DwarvesObj', JSON.stringify(Dwarves.Occupations));
+	localStorage.setItem('ResObject', JSON.stringify(Res));
+	localStorage.setItem('DwarvesObject', JSON.stringify(Dwarves.Data));
 	console.log("Saved");
 	Main.Update();
 }
 
 LoadRes = function(){
-	Res = JSON.parse(localStorage.getItem('ResObj'));
-	Dwarves.Occupations = JSON.parse(localStorage.getItem('DwarvesObj'));
+	Res = JSON.parse(localStorage.getItem('ResObject'));
+	Dwarves.Data = JSON.parse(localStorage.getItem('DwarvesObject'));
 	console.log(Dwarves);
 	console.log("Loaded");
 	Main.Update();

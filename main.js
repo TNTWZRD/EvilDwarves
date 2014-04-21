@@ -16,9 +16,9 @@ Main.Update = function(){
 	
 	// Update Dwarf Table
 	
-	document.getElementById("DwarfNoneCount").innerHTML = Dwarves.Occupation.None;
-	document.getElementById("DwarfMinerCount").innerHTML = Dwarves.Occupation.Miner;
-	document.getElementById("DwarfFarmerCount").innerHTML = Dwarves.Occupation.Farmer;
+	document.getElementById("DwarfNoneCount").innerHTML = Dwarves.Data.Occupation.None;
+	document.getElementById("DwarfMinerCount").innerHTML = Dwarves.Data.Occupation.Miner;
+	document.getElementById("DwarfFarmerCount").innerHTML = Dwarves.Data.Occupation.Farmer;
 	
 	// Update Resources Table
 	
