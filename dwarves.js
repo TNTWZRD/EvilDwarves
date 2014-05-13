@@ -36,7 +36,7 @@ Dwarves.RunAll = function(){
 		Dwarves.Shepherd.Herd();
 		Dwarves.Rancher.Ranch();
 		Dwarves.Cook.Cook();
-		Res.Item.Meat -= (0.03 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6);
+		Res.Item.Meat -= (0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6);
 	}else if(Res.Item.Fish >> 0){
 		Dwarves.Miner.Mine();
 		Dwarves.Farmer.Farm();

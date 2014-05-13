@@ -60,6 +60,62 @@ CI.NewIn = function(){
 	if(CommandIn == "buildStove()"){
 		CI.Commands.BuildStove();
 	}
+	// Other Easyer Commands
+	
+	//Dwarf Commands
+	if(CommandIn == "Dwarf"){
+		CI.Commands.NewDwarf();
+	}
+	if(CommandIn == "Miner"){
+		CI.Commands.NewMiner();
+	}
+	if(CommandIn == "Farmer"){
+		CI.Commands.NewFarmer();
+	}
+	if(CommandIn == "Logger"){
+		CI.Commands.NewLogger();
+	}
+	if(CommandIn == "Hunter"){
+		CI.Commands.NewHunter();
+	}
+	if(CommandIn == "Fisher"){
+		CI.Commands.NewFisher();
+	}
+	if(CommandIn == "Shepherd"){
+		CI.Commands.NewShepherd();
+	}
+	if(CommandIn == "Rancher"){
+		CI.Commands.NewRancher();
+	}
+	if(CommandIn == "Cook"){
+		CI.Commands.NewCook();
+	}
+	
+	//Tool Commands
+	if(CommandIn == "Pick"){
+		CI.Commands.BuildPick();
+	}
+	if(CommandIn == "Hoe"){
+		CI.Commands.BuildHoe();
+	}
+	if(CommandIn == "Axe"){
+		CI.Commands.BuildAxe();
+	}
+	if(CommandIn == "Bow"){
+		CI.Commands.BuildBow();
+	}
+	if(CommandIn == "FishingRod"){
+		CI.Commands.BuildFishingRod();
+	}
+	if(CommandIn == "Shears"){
+		CI.Commands.BuildShears();
+	}
+	if(CommandIn == "Cane"){
+		CI.Commands.BuildCane();
+	}
+	if(CommandIn == "Stove"){
+		CI.Commands.BuildStove();
+	}
 }
 
 // Begin Command Functions
