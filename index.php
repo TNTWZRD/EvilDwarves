@@ -127,7 +127,6 @@
 </td>
 <td>
 
-<br>
 <table border="1px" padding="2px" style="text-align: center;">
 <tr>
 	<th> Dwarf Occupation: </th>
@@ -170,11 +169,9 @@
 	<td> Cook: </td>
 	<td id="DwarfCookCount"> 1.00 </td>
 </tr>
-</br>
 </table>
 </td>
 <td>
-
 
 <table border="1px" padding="2px" style="text-align: center;">
 <tr>
