@@ -7,8 +7,8 @@ SaveRes = function(){
 
 LoadRes = function(){
 	if(localStorage.getItem("ResObject") != null){
-		Res = atob(JSON.parse(localStorage.getItem('ResObject')));
-		Dwarves.Data = atob(JSON.parse(localStorage.getItem('DwarvesObject')));
+		Res = JSON.parse(atob(localStorage.getItem('ResObject')));
+		Dwarves.Data = JSON.parse(atob(localStorage.getItem('DwarvesObject')));
 		console.log(Dwarves);
 		console.log("Loaded");
 		Update();

@@ -11,23 +11,24 @@ Dwarves.Shepherd = {};
 Dwarves.Rancher = {};
 Dwarves.Cook = {};
 
-Dwarves.Data.Occupation.None = 10;
-Dwarves.Data.Occupation.Miner = 0;
+Dwarves.Data.Occupation.None = 6;
+Dwarves.Data.Occupation.Miner = 1;
 Dwarves.Data.Occupation.Farmer = 0;
 Dwarves.Data.Occupation.Logger = 0;
-Dwarves.Data.Occupation.Hunter = 0;
+Dwarves.Data.Occupation.Hunter = 3;
 Dwarves.Data.Occupation.Fisher = 0;
 Dwarves.Data.Occupation.Shepherd = 0;
 Dwarves.Data.Occupation.Rancher = 0;
 Dwarves.Data.Occupation.Cook = 0;
 
-Dwarves.Pause = false;
+Dwarves.Pause = true;
 setInterval('Dwarves.RunAll()', 1000);
 setInterval('SaveRes()', 60000);
 
 Dwarves.RunAll = function(){
+	Update();
 	if(Dwarves.Pause != true){
-	if(Res.Item.Meat >> 0){
+	if(Res.Item.Meat >= ((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6)) || Res.Item.Fish >= ((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6))){
 		Dwarves.Miner.Mine();
 		Dwarves.Farmer.Farm();
 		Dwarves.Logger.Logg();
@@ -36,17 +37,11 @@ Dwarves.RunAll = function(){
 		Dwarves.Shepherd.Herd();
 		Dwarves.Rancher.Ranch();
 		Dwarves.Cook.Cook();
-		Res.Item.Meat -= (0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6);
-	}else if(Res.Item.Fish >> 0){
-		Dwarves.Miner.Mine();
-		Dwarves.Farmer.Farm();
-		Dwarves.Logger.Logg();
-		Dwarves.Hunter.Hunt();
-		Dwarves.Fisher.Fish();
-		Dwarves.Shepherd.Herd();
-		Dwarves.Rancher.Ranch();
-		Dwarves.Cook.Cook();
-		Res.Item.Fish -= (0.5 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6);
+		if(Res.Item.Meat >= ((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6))){
+			Res.Item.Meat -= ((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6));
+		}else{
+			Res.Item.Fish -= ((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6));
+		}
 	}else{
 		alert("You Are Out Of Food.... You Failed Your Mission To Survive. Good Luck Next Time! ");
 		localStorage.clear();
@@ -152,7 +147,7 @@ Dwarves.New.Logger = function(num){
 
 Dwarves.Hunter.Hunt = function(){
 	if(Dwarves.Data.Occupation.Hunter >= 1){
-		Res.Item.Meat += (Dwarves.Data.Occupation.Hunter / 4);
+		Res.Item.Meat += (Dwarves.Data.Occupation.Hunter / 1.3);
 		Update();
 	}
 }
@@ -241,8 +236,9 @@ Dwarves.New.Rancher = function(num){
 //Cook Dwarf
 
 Dwarves.Cook.Cook = function(){
-	if(Dwarves.Data.Occupation.Cook >= 1){
-		Res.Item.Meat += (Dwarves.Data.Occupation.Rancher / 50);
+	if(Dwarves.Data.Occupation.Cook >= 1 && Res.Item.Coal >= (1*Dwarves.Data.Occupation.Cook)){
+		Res.Item.Meat += (Dwarves.Data.Occupation.Cook / 50);
+		Res.Item.Coal -= (1*Dwarves.Data.Occupation.Cook);
 		Update();
 	}
 }

@@ -6,29 +6,34 @@ body{
 	font-family: 'Roboto', 'sans-serif';
 	background:url('images/background.jpg');
 }
-table{
+.data{
 	background:rgba(255,255,255,0.6);
 	font-weight:100;
+	border-radius: 0 10px 10px 0;
+	padding: 3px;
 	color:black;
 }
 
 #stat-bar{
+	font-size: 20pt;
 	display:hidden;
 	text-align:center;
-	background:#fff;
-	height:50px;
+	background: #fff;
+	margin-bottom: 5px;
+	height:40px;
+	padding: 10px;
+	border-radius: 0 0 10px 10px;
 }
 .main-header{
 }
 .clearfix{
-	height:100px;
 	background:#fff;
 }
 .button{
 	cursor:pointer;
 	font-size:20pt;
 	font-weight:100;
-	padding:3px;
+	padding:5px;
 	color:black;
 	border:2px solid #000;
 	border-radius:1em;
@@ -49,7 +54,7 @@ table{
 	margin-top:-8px;
 	font-size:20pt;
 	font-weight:100;
-	padding:3px;
+	padding:5px;
 	color:black;
 	cursor:pointer;
 	transition:.1s linear;
@@ -110,8 +115,3 @@ table{
 	display:block;
 	position:fixed;
 }
-
-
-
-
-

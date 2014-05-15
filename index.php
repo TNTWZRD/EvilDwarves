@@ -9,8 +9,9 @@
 <meta name="keywords" content="Art,Code,Team" />
 <meta name="robots" content="index, nofollow" />
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=no" />
-<link rel="icon" type="image/png" href="images/FaviCon.png" />
+<link rel="icon" type="image/png" href="images/favicon.ico" />
 <!--<link rel="stylesheet" type="text/css" href="screen.css">-->
+<link rel="stylesheet" type="text/css" href="otherstyles.css" />
 <link rel="stylesheet" type="text/css" href="main-style.css" />
 <script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/js/page_context.js"></script>
 </head>
@@ -79,11 +80,9 @@
 	</div>
 </header>
 <div id="stat-bar"></div>
-<table id="main-table status">
+<table class="data" id="main-table status">
 <td>
-
-
-<table id="dwarf-table" border="1px" padding="2px" style="text-align: center;">
+<table class="data" id="dwarf-table" border="1px" padding="2px" style="text-align: center;">
 <tr>
 	<th> Item: </th> 
 	<th> Count: </th>
@@ -127,7 +126,7 @@
 </td>
 <td>
 
-<table border="1px" padding="2px" style="text-align: center;">
+<table class="data" border="1px" padding="2px" style="text-align: center;">
 <tr>
 	<th> Dwarf Occupation: </th>
 	<th> Count: </th>
@@ -173,7 +172,7 @@
 </td>
 <td>
 
-<table border="1px" padding="2px" style="text-align: center;">
+<table class="data" border="1px" padding="2px" style="text-align: center;">
 <tr>
 	<th> Resource: </th>
 	<th> Count: </th>
@@ -228,11 +227,95 @@
 </tr>
 </table>
 </td>
-<script src="Jquerry.min.js"></script>
+</table>
+
+<table class="data" style="text-align: Center; margin-top: 10px;">
+<tr class="OpLinks">
+ <td>
+  <a href="" id="NDwarf">New Dwarf</a>
+ </td>
+ <td>
+  <a href="" id="NMiner">New Miner</a>
+ </td>
+ <td>
+  <a href="" id="NFarmer">New Farmer</a>
+ </td>
+ <td>
+  <a href="" id="NLogger">New Logger</a>
+ </td>
+ <td>
+  <a href="" id="NHunter">New Hunter</a>
+ </td>
+ <td>
+  <a href="" id="NFisher">New Fisher</a>
+ </td>
+ <td>
+  <a href="" id="NShepherd">New Shepherd</a>
+ </td>
+ <td>
+  <a href="" id="NRancher">New Rancher</a>
+ </td>
+ <td>
+  <a href="" id="NCook">New Cook</a>
+ </td>
+</tr>
+<tr class="OpLinks">
+ <td>
+  <a href="" id="BPick">Build Pick</a>
+ </td>
+ <td>
+  <a href="" id="BAxe">Build Axe</a>
+ </td>
+ <td>
+  <a href="" id="BHoe">Build Hoe</a>
+ </td>
+ <td>
+  <a href="" id="BBow">Build Bow</a>
+ </td>
+ <td>
+  <a href="" id="BFishingRod">Build Fishing-Rod</a>
+ </td>
+ <td>
+  <a href="" id="BShears">Build Shears</a>
+ </td>
+ <td>
+  <a href="" id="BCane">Build Cane</a>
+ </td>
+ <td>
+  <a href="" id="BStove">Build Stove</a>
+ </td>
+</tr>
+</table>
+
+<table class="data" style="text-align: Center; margin-top: 10px;">
+<tr class="OpLinks">
+ <td>
+  <a href="stats.php" target="_BLANK" id="DisplayStats">Display All Stats</a>
+ </td>
+ <td>
+  <a href="contact.php" target="_BLANK" id="Contact">Contact</a>
+ </td>
+ <td>
+  <a href="socialmedia.php" target="_BLANK" id="SocialMedia">Social Media</a>
+ </td>
+ <td>
+  <a href="other.php" target="_BLANK" id="OtherWorks">Other Works</a>
+ </td>
+ <td>
+  <a href="suggestions.php" target="_BLANK" id="SuggestionBox">Suggestion Box</a>
+ </td>
+ <td>
+  <a href="credits" target="_BLANK" id="Credits">Credits</a>
+ </td>
+</tr>
+</table>
+
+<script src="jquerry.min.js"></script>
 <script src="main.js"></script>
 <script src="tools.js"></script>
 <script src="dwarves.js"></script>
 <script src="clickscript.js"></script>
+<script src="clickscriptbuttons.js"></script>
 <script src="dwarves.js"></script>
 <script src="resources.js"></script>
 <script src="commandinput.js"></script>

@@ -4,6 +4,8 @@ Main.RoundFloat = function(n) {
     return (Math.round(n * 10) / 10).toFixed(2);
 }
 
+Main.Title = "Paused | Evil Dwarves";
+
 
 Update = function(){
 	
@@ -78,9 +80,13 @@ Update = function(){
 	document.getElementById("WheatCount").innerHTML = Main.Wheat;
 	document.getElementById("BreadCount").innerHTML = Main.Bread;
 	document.getElementById("WoolCount").innerHTML = Main.Wool;
+	
+	document.getElementById("stat-bar").innerHTML = Main.Title + " | FoodConsumedPerTick : " + Main.RoundFloat((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6)) + " | FoodProducedPerTick : " + Main.RoundFloat((Dwarves.Data.Occupation.Hunter / 1.3 )+(Dwarves.Data.Occupation.Fisher / 30));
+	
+	if(Main.RoundFloat((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6)) >= Main.RoundFloat((Dwarves.Data.Occupation.Hunter / 1.3 )+(Dwarves.Data.Occupation.Fisher / 30))){
+		document.title = "FOOD PRODUCTION LOW | Evil Dwarves"; 
+	}else{
+		document.title = Main.Title + " | FCPT : " + ((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6)); 
+	}
+	
 }
-
-Main.InitGame = function(){
-}
-
-Main.InitGame();

@@ -37,8 +37,16 @@ $(function(){
 		$("#Pause").click(function(event) {
 			if(Dwarves.Pause == true){
 				Dwarves.Pause = false;
+				Main.Title = "Unpaused | Evil Dwarves";
+				document.title = Main.Title;
+				document.getElementById("Pause").innerHTML = " Pause ";
+				Update();
 			}else{
 				Dwarves.Pause = true;
+				Main.Title = "Paused | Evil Dwarves";
+				document.title = Main.Title;
+				document.getElementById("Pause").innerHTML = " UnPause ";
+				Update();
 			}
 		});
 	}

@@ -3,6 +3,9 @@ Res.Alive = {};
 Res.Item = {};
 Res.Food = {};
 
+RandomNumberRes = function(){
+	return Math.floor(Math.random() * 10) + 10;
+}
 
 Res.Alive.Dwarves = 10;
 
@@ -15,15 +18,20 @@ Res.Item.Shear = 2;
 Res.Item.Cane = 2;
 Res.Item.Stove = 2;
 
-Res.Item.Stone = 10;
-Res.Item.Dirt = 10;
-Res.Item.Iron = 10;
-Res.Item.Gold = 10;
-Res.Item.Wood = 10;
-Res.Item.Brick = 10;
-Res.Item.Meat = 10;
-Res.Item.Fish = 10;
-Res.Item.Wheat = 10;
-Res.Item.Bread = 10;
-Res.Item.Coal = 10;
-Res.Item.Wool = 10;
+Res.Item.Stone = RandomNumberRes();
+Res.Item.Dirt = RandomNumberRes();
+Res.Item.Iron = RandomNumberRes();
+Res.Item.Gold = RandomNumberRes();
+Res.Item.Wood = RandomNumberRes();
+Res.Item.Brick = RandomNumberRes();
+Res.Item.Meat = RandomNumberRes();
+Res.Item.Fish = RandomNumberRes();
+Res.Item.Wheat = RandomNumberRes();
+Res.Item.Bread = RandomNumberRes();
+Res.Item.Coal = RandomNumberRes();
+Res.Item.Wool = RandomNumberRes();
+
+Res.Currency = RandomNumberRes()+50; //Averages About $65
+
+Update();
+document.getElementById("Pause").innerHTML = " UnPause ";
