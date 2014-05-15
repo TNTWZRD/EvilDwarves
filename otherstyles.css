@@ -24,3 +24,11 @@
 	color: green;
 	background-color: black;
 }
+
+.Links{
+	color: silver;
+	background-color: grey;
+	border-radius: 2px;
+	border: 1px solid black;
+	text-decoration: none;
+}

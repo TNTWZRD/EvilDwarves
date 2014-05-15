@@ -225,6 +225,104 @@
 	<td> Wool </td>
 	<td id="WoolCount"> 0.00 </td>
 </tr>
+<tr>
+	<td> Coins </td>
+	<td id="CoinsCount"> 0.00 </td>
+</tr>
+</table>
+<td>
+<table border="0px" class="data" style="text-align: center;">
+<tr>
+<th>Item: </th>
+<th>Amount: </th>
+<th>Price: </th>
+<th>Buy: </th>
+<th>Sell: </th> 
+</tr>
+<tr>
+<td>Stone</td>
+<td>100</td>
+<td>500 Coins</td>
+<td><a href="" class="Links" id="BuyStone">Buy 100 Stone</a></td>
+<td><a href="" class="Links" id="SellStone">Sell 100 Stone</a></td>
+</tr>
+<tr>
+<td>Coal</td>
+<td>100</td>
+<td>750 Coins</td>
+<td><a href="" class="Links" id="BuyCoal">Buy 100 Coal</a></td>
+<td><a href="" class="Links" id="SellCoal">Sell 100 Coal</a></td>
+</tr>
+<tr>
+<td>Dirt</td>
+<td>100</td>
+<td>375 Coins</td>
+<td><a href="" class="Links" id="BuyDirt">Buy 100 Dirt</a></td>
+<td><a href="" class="Links" id="SellDirt">Sell 100 Dirt</a></td>
+</tr>
+<tr>
+<td>Iron</td>
+<td>100</td>
+<td>5000 Coins</td>
+<td><a href="" class="Links" id="BuyIron">Buy 100 Iron</a></td>
+<td><a href="" class="Links" id="SellIron">Sell 100 Iron</a></td>
+</tr>
+<tr>
+<td>Gold</td>
+<td>100</td>
+<td>7500 Coins</td>
+<td><a href="" class="Links" id="BuyGold">Buy 100 Gold</a></td>
+<td><a href="" class="Links" id="SellGold">Sell 100 Gold</a></td>
+</tr>
+<tr>
+<td>Wood</td>
+<td>100</td>
+<td>450 Coins</td>
+<td><a href="" class="Links" id="BuyWood">Buy 100 Wood</a></td>
+<td><a href="" class="Links" id="SellWood">Sell 100 Wood</a></td>
+</tr>
+<tr>
+<td>Brick</td>
+<td>100</td>
+<td>350 Coins</td>
+<td><a href="" class="Links" id="BuyBrick">Buy 100 Brick</a></td>
+<td><a href="" class="Links" id="SellBrick">Sell 100 Brick</a></td>
+</tr>
+<tr>
+<td>Meat</td>
+<td>100</td>
+<td>800 Coins</td>
+<td><a href="" class="Links" id="BuyMeat">Buy 100 Meat</a></td>
+<td><a href="" class="Links" id="SellMeat">Sell 100 Meat</a></td>
+</tr>
+<tr>
+<td>Fish</td>
+<td>100</td>
+<td>375 Coins</td>
+<td><a href="" class="Links" id="BuyFish">Buy 100 Fish</a></td>
+<td><a href="" class="Links" id="SellFish">Sell 100 Fish</a></td>
+</tr>
+<tr>
+<td>Wheat</td>
+<td>100</td>
+<td>5000 Coins</td>
+<td><a href="" class="Links" id="BuyWheat">Buy 100 Wheat</a></td>
+<td><a href="" class="Links" id="SellWheat">Sell 100 Wheat</a></td>
+</tr>
+<tr>
+<td>Bread</td>
+<td>100</td>
+<td>7500 Coins</td>
+<td><a href="" class="Links" id="BuyBread">Buy 100 Bread</a></td>
+<td><a href="" class="Links" id="SellBread">Sell 100 Bread</a></td>
+</tr>
+<tr>
+<td>Wool</td>
+<td>100</td>
+<td>450 Coins</td>
+<td><a href="" class="Links" id="BuyWool">Buy 100 Wool</a></td>
+<td><a href="" class="Links" id="SellWool">Sell 100 Wool</a></td>
+</tr>
 </table>
 </td>
 </table>

@@ -28,7 +28,7 @@ setInterval('SaveRes()', 1000);
 Dwarves.RunAll = function(){
 	Update();
 	if(Dwarves.Pause != true){
-	if(Res.Item.Meat >= ((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6)) || Res.Item.Fish >= ((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6))){
+	if(Res.Item.Meat >= ((0.1 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6)) || Res.Item.Fish >= ((0.1 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6))){
 		Dwarves.Miner.Mine();
 		Dwarves.Farmer.Farm();
 		Dwarves.Logger.Logg();
@@ -37,10 +37,10 @@ Dwarves.RunAll = function(){
 		Dwarves.Shepherd.Herd();
 		Dwarves.Rancher.Ranch();
 		Dwarves.Cook.Cook();
-		if(Res.Item.Meat >= ((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6))){
-			Res.Item.Meat -= ((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6));
+		if(Res.Item.Meat >= ((0.1 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6))){
+			Res.Item.Meat -= ((0.1 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6));
 		}else{
-			Res.Item.Fish -= ((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6));
+			Res.Item.Fish -= ((0.1 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6));
 		}
 	}else{
 		alert("You Are Out Of Food.... You Failed Your Mission To Survive. Good Luck Next Time! ");

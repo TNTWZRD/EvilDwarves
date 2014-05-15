@@ -83,10 +83,10 @@ Update = function(){
 	
 	document.getElementById("stat-bar").innerHTML = Main.Title + " | FoodConsumedPerTick : " + Main.RoundFloat((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6)) + " | FoodProducedPerTick : " + Main.RoundFloat((Dwarves.Data.Occupation.Hunter / 1.3 )+(Dwarves.Data.Occupation.Fisher / 30));
 	
-	if(Main.RoundFloat((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6)) >= Main.RoundFloat((Dwarves.Data.Occupation.Hunter / 1.3 )+(Dwarves.Data.Occupation.Fisher / 30))){
+	if(Main.RoundFloat((0.1 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6)) >= Main.RoundFloat((Dwarves.Data.Occupation.Hunter / 1.3 )+(Dwarves.Data.Occupation.Fisher / 30))){
 		document.title = "FOOD PRODUCTION LOW | Evil Dwarves"; 
 	}else{
-		document.title = Main.Title + " | FCPT : " + ((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6)); 
+		document.title = Main.Title + " | FCPT : " + ((0.1 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6)); 
 	}
 	
 }
