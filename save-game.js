@@ -1,6 +1,22 @@
+SaveGameAPT = [];
+
+CalculateAPT =  function(){
+	SaveGameAPT[0] = (Dwarves.Data.Occupation.Miner / 6); //Stone
+	SaveGameAPT[1] = (Dwarves.Data.Occupation.Miner / 12) - (1*Dwarves.Data.Occupation.Cook); //Coal
+	SaveGameAPT[2] = (Dwarves.Data.Occupation.Miner / 12); //Dirt
+	SaveGameAPT[3] = (Dwarves.Data.Occupation.Farmer / 20);
+	SaveGameAPT[4] = (Dwarves.Data.Occupation.Logger / 5);
+	SaveGameAPT[5] = (Dwarves.Data.Occupation.Hunter / 1.3) + (Dwarves.Data.Occupation.Rancher / 10) + (Dwarves.Data.Occupation.Cook / 50);
+	SaveGameAPT[6] = (Dwarves.Data.Occupation.Fisher / 30);
+	SaveGameAPT[7] = (Dwarves.Data.Occupation.Shepherd / 10);
+	SaveGameAPT[8] = (Dwarves.Data.Occupation.Rancher / 10);
+}
+
 SaveRes = function(){
 	localStorage.setItem('ResObject', btoa(JSON.stringify(Res)));
 	localStorage.setItem('DwarvesObject', btoa(JSON.stringify(Dwarves.Data)));
+	CalculateAPT();
+	localStorage.setItem('APT', btoa(JSON.stringify(SaveGameAPT)));
 	console.log("Saved");
 	Update();
 }

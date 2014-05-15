@@ -261,13 +261,15 @@
 </tr>
 <tr class="OpLinks">
  <td>
+ </td>
+ <td>
   <a href="" id="BPick">Build Pick</a>
  </td>
  <td>
-  <a href="" id="BAxe">Build Axe</a>
+  <a href="" id="BHoe">Build Hoe</a>
  </td>
  <td>
-  <a href="" id="BHoe">Build Hoe</a>
+  <a href="" id="BAxe">Build Axe</a>
  </td>
  <td>
   <a href="" id="BBow">Build Bow</a>

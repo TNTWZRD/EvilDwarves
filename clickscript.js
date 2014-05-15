@@ -1,6 +1,7 @@
 $(function(){
 		$("#SaveAll").click(function(event) {
 			event.preventDefault();
+			CalculateAPT();
 			SaveRes();
 		});
 	}

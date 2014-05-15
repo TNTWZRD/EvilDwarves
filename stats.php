@@ -24,7 +24,9 @@ Evil Dwarves StatPage <a href="" id="ReloadStats" style="color: Blue; text-decor
 </header>
 <div class="data">
 List Of All Stats:
-<table border="1px" class="data" id="main-table status" style="padding: 3px;">
+<table>
+<td>
+<table border="1px" class="data" id="main-table status" style="padding: 3px; text-align: center;">
 <tr>
 	<th>
 	Stat/Item: 
@@ -44,7 +46,7 @@ List Of All Stats:
 	<span id="Stat.Dwarves"></span>
 	</td>
 	<td>
-	<span id="Stat.Dwarves.PerTick"></span>
+	<span id="Stat.Dwarves.PerTick">N/A</span>
 	</td>
 </tr>
 <tr>
@@ -55,7 +57,7 @@ List Of All Stats:
 	<span id="Stat.Picks"></span>
 	</td>
 	<td>
-	<span id="Stat.Picks.PerTick"></span>
+	<span id="Stat.Picks.PerTick">N/A</span>
 	</td>
 </tr>
 <tr>
@@ -66,7 +68,7 @@ List Of All Stats:
 	<span id="Stat.Axes"></span>
 	</td>
 	<td>
-	<span id="Stat.Axes.PerTick"></span>
+	<span id="Stat.Axes.PerTick">N/A</span>
 	</td>
 </tr>
 <tr>
@@ -77,7 +79,7 @@ List Of All Stats:
 	<span id="Stat.Hoes"></span>
 	</td>
 	<td>
-	<span id="Stat.Hoes.PerTick"></span>
+	<span id="Stat.Hoes.PerTick">N/A</span>
 	</td>
 </tr>
 <tr>
@@ -88,7 +90,7 @@ List Of All Stats:
 	<span id="Stat.Bows"></span>
 	</td>
 	<td>
-	<span id="Stat.Bows.PerTick"></span>
+	<span id="Stat.Bows.PerTick">N/A</span>
 	</td>
 </tr>
 <tr>
@@ -99,7 +101,7 @@ List Of All Stats:
 	<span id="Stat.FishingRods"></span>
 	</td>
 	<td>
-	<span id="Stat.FishingRods.PerTick"></span>
+	<span id="Stat.FishingRods.PerTick">N/A</span>
 	</td>
 </tr>
 <tr>
@@ -110,7 +112,7 @@ List Of All Stats:
 	<span id="Stat.Shears"></span>
 	</td>
 	<td>
-	<span id="Stat.Shears.PerTick"></span>
+	<span id="Stat.Shears.PerTick">N/A</span>
 	</td>
 </tr>
 <tr>
@@ -121,7 +123,7 @@ List Of All Stats:
 	<span id="Stat.Cane"></span>
 	</td>
 	<td>
-	<span id="Stat.Cane.PerTick"></span>
+	<span id="Stat.Cane.PerTick">N/A</span>
 	</td>
 </tr>
 <tr>
@@ -132,9 +134,159 @@ List Of All Stats:
 	<span id="Stat.Stove"></span>
 	</td>
 	<td>
-	<span id="Stat.Stove.PerTick"></span>
+	<span id="Stat.Stove.PerTick">N/A</span>
 	</td>
 </tr>
+</table>
+</td>
+
+<td>
+<table border="1px" class="data" id="main-table status" style="padding: 3px; text-align: center;">
+<tr>
+	<th>
+	Stat/Item: 
+	</th>
+	<th>
+	Amount/Number: 
+	</th>
+	<th>
+	Amount Per Tick: 
+	</th>
+</tr>
+<tr>
+	<td>
+	<span>Stone: </span>
+	</td>
+	<td>
+	<span id="Stat.Stone"></span>
+	</td>
+	<td>
+	<span id="Stat.Stone.PerTick"></span>
+	</td>
+</tr>
+<tr>
+    <td>
+	<span>Coal: </span>
+	</td>
+	<td>
+	<span id="Stat.Coal"></span>
+	</td>
+	<td>
+	<span id="Stat.Coal.PerTick"></span>
+	</td>
+</tr>
+<tr>
+    <td>
+	<span>Dirt: </span>
+	</td>
+	<td>
+	<span id="Stat.Dirt"></span>
+	</td>
+	<td>
+	<span id="Stat.Dirt.PerTick"></span>
+	</td>
+</tr>
+<tr>
+    <td>
+	<span>Iron: </span>
+	</td>
+	<td>
+	<span id="Stat.Iron"></span>
+	</td>
+	<td>
+	<span id="Stat.Iron.PerTick"></span>
+	</td>
+</tr>
+<tr>
+    <td>
+	<span>Gold: </span>
+	</td>
+	<td>
+	<span id="Stat.Gold"></span>
+	</td>
+	<td>
+	<span id="Stat.Gold.PerTick"></span>
+	</td>
+</tr>
+<tr>
+    <td>
+	<span>Wood: </span>
+	</td>
+	<td>
+	<span id="Stat.Wood"></span>
+	</td>
+	<td>
+	<span id="Stat.Wood.PerTick"></span>
+	</td>
+</tr>
+<tr>
+    <td>
+	<span>Brick: </span>
+	</td>
+	<td>
+	<span id="Stat.Brick"></span>
+	</td>
+	<td>
+	<span id="Stat.Brick.PerTick"></span>
+	</td>
+</tr>
+<tr>
+    <td>
+	<span>Meat: </span>
+	</td>
+	<td>
+	<span id="Stat.Meat"></span>
+	</td>
+	<td>
+	<span id="Stat.Meat.PerTick"></span>
+	</td>
+</tr>
+<tr>
+    <td>
+	<span>Fish: </span>
+	</td>
+	<td>
+	<span id="Stat.Fish"></span>
+	</td>
+	<td>
+	<span id="Stat.Fish.PerTick"></span>
+	</td>
+</tr>
+<tr>
+    <td>
+	<span>Wheat: </span>
+	</td>
+	<td>
+	<span id="Stat.Wheat"></span>
+	</td>
+	<td>
+	<span id="Stat.Wheat.PerTick"></span>
+	</td>
+</tr>
+<tr>
+    <td>
+	<span>Bread: </span>
+	</td>
+	<td>
+	<span id="Stat.Bread"></span>
+	</td>
+	<td>
+	<span id="Stat.Bread.PerTick"></span>
+	</td>
+</tr>
+<tr>
+    <td>
+	<span>Wool: </span>
+	</td>
+	<td>
+	<span id="Stat.Wool"></span>
+	</td>
+	<td>
+	<span id="Stat.Wool.PerTick"></span>
+	</td>
+</tr>
+</table>
+</td>
 </table>
 </div>
 
@@ -163,5 +315,6 @@ List Of All Stats:
 
 <script src="jquerry.min.js"></script>
 <script src="Stats/main.js"></script>
+<script src="Stats/click.js"></script>
 </body>
 </html>
