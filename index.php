@@ -305,21 +305,21 @@
 <tr>
 <td>Wheat</td>
 <td>100</td>
-<td>5000 Coins</td>
+<td>200 Coins</td>
 <td><a href="" class="Links" id="BuyWheat">Buy 100 Wheat</a></td>
 <td><a href="" class="Links" id="SellWheat">Sell 100 Wheat</a></td>
 </tr>
 <tr>
 <td>Bread</td>
 <td>100</td>
-<td>7500 Coins</td>
+<td>200 Coins</td>
 <td><a href="" class="Links" id="BuyBread">Buy 100 Bread</a></td>
 <td><a href="" class="Links" id="SellBread">Sell 100 Bread</a></td>
 </tr>
 <tr>
 <td>Wool</td>
 <td>100</td>
-<td>450 Coins</td>
+<td>375 Coins</td>
 <td><a href="" class="Links" id="BuyWool">Buy 100 Wool</a></td>
 <td><a href="" class="Links" id="SellWool">Sell 100 Wool</a></td>
 </tr>
@@ -415,6 +415,7 @@
 <script src="tools.js"></script>
 <script src="dwarves.js"></script>
 <script src="clickscript.js"></script>
+<script src="shopbuttons.js"></script>
 <script src="clickscriptbuttons.js"></script>
 <script src="dwarves.js"></script>
 <script src="resources.js"></script>

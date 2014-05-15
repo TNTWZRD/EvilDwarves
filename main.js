@@ -67,6 +67,7 @@ Update = function(){
 	if(Main.RoundFloat(Res.Item.Wheat) >= 100){Main.Wheat = Main.RoundFloat(Res.Item.Wheat/100) + " X 100";}else{Main.Wheat = Main.RoundFloat(Res.Item.Wheat);}
 	if(Main.RoundFloat(Res.Item.Bread) >= 100){Main.Bread = Main.RoundFloat(Res.Item.Bread/100) + " X 100";}else{Main.Bread = Main.RoundFloat(Res.Item.Bread);}
 	if(Main.RoundFloat(Res.Item.Wool) >= 100){Main.Wool = Main.RoundFloat(Res.Item.Wool/100) + " X 100";}else{Main.Wool = Main.RoundFloat(Res.Item.Wool);}
+	if(Main.RoundFloat(Res.Currency) >= 100){Main.Currency = "$ " + Main.RoundFloat(Res.Currency);}else{Main.Currency = "$ " + Main.RoundFloat(Res.Currency);}
 	
 	document.getElementById("StoneCount").innerHTML = Main.Stone;
 	document.getElementById("CoalCount").innerHTML = Main.Coal;
@@ -80,6 +81,7 @@ Update = function(){
 	document.getElementById("WheatCount").innerHTML = Main.Wheat;
 	document.getElementById("BreadCount").innerHTML = Main.Bread;
 	document.getElementById("WoolCount").innerHTML = Main.Wool;
+	document.getElementById("CoinCount").innerHTML = Main.Currency;
 	
 	document.getElementById("stat-bar").innerHTML = Main.Title + " | FoodConsumedPerTick : " + Main.RoundFloat((0.3 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6)) + " | FoodProducedPerTick : " + Main.RoundFloat((Dwarves.Data.Occupation.Hunter / 1.3 )+(Dwarves.Data.Occupation.Fisher / 30));
 	
