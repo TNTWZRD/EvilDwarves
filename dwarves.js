@@ -23,7 +23,7 @@ Dwarves.Data.Occupation.Cook = 0;
 
 Dwarves.Pause = true;
 setInterval('Dwarves.RunAll()', 1000);
-setInterval('SaveRes()', 60000);
+setInterval('SaveRes()', 1000);
 
 Dwarves.RunAll = function(){
 	Update();

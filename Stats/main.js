@@ -58,4 +58,4 @@ Main.SetData = function(){
 	document.getElementById("Stat.Wool.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[8]);
 }
 
-setInterval(Main.LoadStats(), 60000);
+setInterval('Main.LoadStats()', 1000);

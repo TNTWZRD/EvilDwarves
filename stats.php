@@ -34,9 +34,7 @@ List Of All Stats:
 	<th>
 	Amount/Number: 
 	</th>
-	<th>
-	Amount Per Tick: 
-	</th>
+
 </tr>
 <tr>
 	<td>
@@ -45,9 +43,7 @@ List Of All Stats:
 	<td>
 	<span id="Stat.Dwarves"></span>
 	</td>
-	<td>
-	<span id="Stat.Dwarves.PerTick">N/A</span>
-	</td>
+
 </tr>
 <tr>
     <td>
@@ -56,9 +52,7 @@ List Of All Stats:
 	<td>
 	<span id="Stat.Picks"></span>
 	</td>
-	<td>
-	<span id="Stat.Picks.PerTick">N/A</span>
-	</td>
+
 </tr>
 <tr>
     <td>
@@ -67,9 +61,7 @@ List Of All Stats:
 	<td>
 	<span id="Stat.Axes"></span>
 	</td>
-	<td>
-	<span id="Stat.Axes.PerTick">N/A</span>
-	</td>
+
 </tr>
 <tr>
     <td>
@@ -78,9 +70,7 @@ List Of All Stats:
 	<td>
 	<span id="Stat.Hoes"></span>
 	</td>
-	<td>
-	<span id="Stat.Hoes.PerTick">N/A</span>
-	</td>
+
 </tr>
 <tr>
     <td>
@@ -89,9 +79,7 @@ List Of All Stats:
 	<td>
 	<span id="Stat.Bows"></span>
 	</td>
-	<td>
-	<span id="Stat.Bows.PerTick">N/A</span>
-	</td>
+
 </tr>
 <tr>
     <td>
@@ -100,9 +88,7 @@ List Of All Stats:
 	<td>
 	<span id="Stat.FishingRods"></span>
 	</td>
-	<td>
-	<span id="Stat.FishingRods.PerTick">N/A</span>
-	</td>
+
 </tr>
 <tr>
     <td>
@@ -111,9 +97,7 @@ List Of All Stats:
 	<td>
 	<span id="Stat.Shears"></span>
 	</td>
-	<td>
-	<span id="Stat.Shears.PerTick">N/A</span>
-	</td>
+
 </tr>
 <tr>
     <td>
@@ -122,9 +106,7 @@ List Of All Stats:
 	<td>
 	<span id="Stat.Cane"></span>
 	</td>
-	<td>
-	<span id="Stat.Cane.PerTick">N/A</span>
-	</td>
+
 </tr>
 <tr>
     <td>
@@ -133,9 +115,7 @@ List Of All Stats:
 	<td>
 	<span id="Stat.Stove"></span>
 	</td>
-	<td>
-	<span id="Stat.Stove.PerTick">N/A</span>
-	</td>
+
 </tr>
 </table>
 </td>
