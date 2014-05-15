@@ -227,7 +227,7 @@
 </tr>
 <tr>
 	<td> Coins </td>
-	<td id="CoinsCount"> 0.00 </td>
+	<td id="CoinCount"> 0.00 </td>
 </tr>
 </table>
 <td>

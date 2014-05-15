@@ -47,15 +47,15 @@ Main.SetData = function(){
 	document.getElementById("Stat.Stone.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[0]);
 	document.getElementById("Stat.Coal.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[1]);
 	document.getElementById("Stat.Dirt.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[2]);
-	document.getElementById("Stat.Iron.PerTick").innerHTML = "N/A";
-	document.getElementById("Stat.Gold.PerTick").innerHTML = "N/A";
-	document.getElementById("Stat.Wood.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[3]);
-	document.getElementById("Stat.Brick.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[4]);
+	document.getElementById("Stat.Iron.PerTick").innerHTML = "Random Chance";
+	document.getElementById("Stat.Gold.PerTick").innerHTML = "Random Chance";
+	document.getElementById("Stat.Wood.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[4]);
+	document.getElementById("Stat.Brick.PerTick").innerHTML = "N/A";
 	document.getElementById("Stat.Meat.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[5]);
 	document.getElementById("Stat.Fish.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[6]);
-	document.getElementById("Stat.Wheat.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[7]);
+	document.getElementById("Stat.Wheat.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[3]);
 	document.getElementById("Stat.Bread.PerTick").innerHTML = "N/A";
-	document.getElementById("Stat.Wool.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[8]);
+	document.getElementById("Stat.Wool.PerTick").innerHTML = Main.RoundFloat(Main.Stats.APT[7]);
 }
 
 setInterval('Main.LoadStats()', 1000);

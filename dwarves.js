@@ -197,12 +197,12 @@ Dwarves.Shepherd.Herd = function(){
 }
 
 Dwarves.New.Shepherd = function(num){
-	if(Dwarves.Data.Occupation.None >= 1*num && Res.Item.Shears >= 1*num && Res.Item.Cane >= 1*num && Res.Item.Wool >= 2*num){
+	if(Dwarves.Data.Occupation.None >= 1*num && Res.Item.Shear >= 1*num && Res.Item.Cane >= 1*num && Res.Item.Wool >= 2*num){
 		Res.Item.Wool -= 2*num;
 		Dwarves.Data.Occupation.None -= 1*num;
 		Dwarves.Data.Occupation.Shepherd += 1*num;
 		Res.Item.Cane -= 1*num;
-		Res.Item.Shears -= 1*num;
+		Res.Item.Shear -= 1*num;
 		console.log("New Dwarf Shepherd Created!");
 		Update();
 	}else{

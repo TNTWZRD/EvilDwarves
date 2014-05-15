@@ -17,7 +17,6 @@ SaveRes = function(){
 	localStorage.setItem('DwarvesObject', btoa(JSON.stringify(Dwarves.Data)));
 	CalculateAPT();
 	localStorage.setItem('APT', btoa(JSON.stringify(SaveGameAPT)));
-	console.log("Saved");
 	Update();
 }
 
