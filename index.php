@@ -96,12 +96,12 @@
 	<td id="PickaxesCount"> 2.00 </td>
 </tr>
 <tr>
-	<td> Axes </td>
-	<td id="AxeCount"> 2.00 </td>
-</tr>
-<tr>
 	<td> Hoes </td>
 	<td id="HoeCount"> 2.00 </td>
+</tr>
+<tr>
+	<td> Axes </td>
+	<td id="AxeCount"> 2.00 </td>
 </tr>
 <tr>
 	<td> Bows </td>

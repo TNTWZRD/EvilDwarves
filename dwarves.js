@@ -25,6 +25,47 @@ Dwarves.Pause = true;
 setInterval('Dwarves.RunAll()', 1000);
 setInterval('SaveRes()', 1000);
 
+Dwarves.NewRandom = function(){
+	console.log("Colonizing random dwarves");
+	Dwarves.NumberOfDwarves = Math.floor(Math.random() * 5) + 1;
+	for(i=0; i<=Dwarves.NumberOfDwarves; i++){
+		Dwarves.RandomOccupation = Math.floor(Math.random() * 9) + 1;
+		if(Dwarves.RandomOccupation == 1){
+			Dwarves.Data.Occupation.None += 1;
+			Res.Alive.Dwarves += 1;
+		}else if(Dwarves.RandomOccupation == 2){
+			Dwarves.Data.Occupation.Miner += 1;
+			Res.Alive.Dwarves += 1;
+		}else if(Dwarves.RandomOccupation == 3){
+			Dwarves.Data.Occupation.Farmer += 1;
+			Res.Alive.Dwarves += 1;
+		}else if(Dwarves.RandomOccupation == 4){
+			Dwarves.Data.Occupation.Logger += 1;
+			Res.Alive.Dwarves += 1;
+		}else if(Dwarves.RandomOccupation == 5){
+			Dwarves.Data.Occupation.Hunter += 1;
+			Res.Alive.Dwarves += 1;
+		}else if(Dwarves.RandomOccupation == 6){
+			Dwarves.Data.Occupation.Fisher += 1;
+			Res.Alive.Dwarves += 1;
+		}else if(Dwarves.RandomOccupation == 7){
+			Dwarves.Data.Occupation.Shepherd += 1;
+			Res.Alive.Dwarves += 1;
+		}else if(Dwarves.RandomOccupation == 8){
+			Dwarves.Data.Occupation.Rancher += 1;
+			Res.Alive.Dwarves += 1;
+		}else if(Dwarves.RandomOccupation == 9){
+			Dwarves.Data.Occupation.Cook += 1;
+			Res.Alive.Dwarves += 1;
+		}else{
+			console.log("Error In Choosing Random Dwarf");
+		}
+		Dwarves.NewRandomBOOL = true;
+	}
+}
+
+Dwarves.NewRandomBOOL = true;
+
 Dwarves.RunAll = function(){
 	Update();
 	if(Dwarves.Pause != true){
@@ -37,6 +78,11 @@ Dwarves.RunAll = function(){
 		Dwarves.Shepherd.Herd();
 		Dwarves.Rancher.Ranch();
 		Dwarves.Cook.Cook();
+		if(Res.Alive.Dwarves >= 25 && Dwarves.NewRandomBOOL == true){ // Randomly Add Dwarves
+			Dwarves.NewRandomBOOL = false;
+			Dwarves.RandomNumberGen = (Math.random() * 200 + 1000000);
+			setTimeout('Dwarves.NewRandom()', (Math.random() * 200 + 50000));
+		}
 		if(Res.Item.Meat >= ((0.1 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6))){
 			Res.Item.Meat -= ((0.1 * Res.Alive.Dwarves)-(Dwarves.Data.Occupation.Cook / 6));
 		}else{
@@ -56,8 +102,12 @@ Dwarves.New.Dwarf = function(num){
 		Res.Item.Gold -= .5 *num;
 		Dwarves.Data.Occupation.None += 1*num;
 		Res.Alive.Dwarves += 1*num;
+	}else if(Res.Currency >= 1000){
+		Dwarves.Data.Occupation.None += 1*num;
+		Res.Alive.Dwarves += 1*num;
+		Res.Currency -= 1000;
 	}else{
-		alert("Error New Dwarf Requires: 20 Stone & 0.5 Gold");
+		alert("Error New Dwarf Requires: 20 Stone & 0.5 Gold (Or $1000)");
 	}
 }
 
