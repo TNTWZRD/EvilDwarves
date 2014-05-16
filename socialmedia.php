@@ -31,7 +31,7 @@
 
 <tr>
 <td><a href="https://www.youtube.com/user/TNTWZRD"><img src="images/Youtube.png"></a></td>
-<td><a href="https://www.youtube.com/user/ThineDarkSoldier"><img src="images/Youtube.png"></a></td>
+<td><a href="https://www.youtube.com/user/97airsoftdiver"><img src="images/Youtube.png"></a></td>
 </tr>
 
 <tr>
