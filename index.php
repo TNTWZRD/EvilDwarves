@@ -419,6 +419,7 @@
 <script src="clickscriptbuttons.js"></script>
 <script src="dwarves.js"></script>
 <script src="resources.js"></script>
+<script src="sellcommand.js"></script>
 <script src="commandinput.js"></script>
 <script src="save-game.js"></script>
 </body>

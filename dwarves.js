@@ -25,42 +25,46 @@ Dwarves.Pause = true;
 setInterval('Dwarves.RunAll()', 1000);
 setInterval('SaveRes()', 1000);
 
+Dwarves.AddDwarves= function(NOD){
+for(i=0; i<=NOD; i++){
+	Dwarves.RandomOccupation = Math.floor(Math.random() * 9) + 1;
+	if(Dwarves.RandomOccupation == 1){
+		Dwarves.Data.Occupation.None += 1;
+		Res.Alive.Dwarves += 1;
+	}else if(Dwarves.RandomOccupation == 2){
+		Dwarves.Data.Occupation.Miner += 1;
+		Res.Alive.Dwarves += 1;
+	}else if(Dwarves.RandomOccupation == 3){
+		Dwarves.Data.Occupation.Farmer += 1;
+		Res.Alive.Dwarves += 1;
+	}else if(Dwarves.RandomOccupation == 4){
+		Dwarves.Data.Occupation.Logger += 1;
+		Res.Alive.Dwarves += 1;
+	}else if(Dwarves.RandomOccupation == 5){
+		Dwarves.Data.Occupation.Hunter += 1;
+		Res.Alive.Dwarves += 1;
+	}else if(Dwarves.RandomOccupation == 6){
+		Dwarves.Data.Occupation.Fisher += 1;
+		Res.Alive.Dwarves += 1;
+	}else if(Dwarves.RandomOccupation == 7){
+		Dwarves.Data.Occupation.Shepherd += 1;
+		Res.Alive.Dwarves += 1;
+	}else if(Dwarves.RandomOccupation == 8){
+		Dwarves.Data.Occupation.Rancher += 1;
+		Res.Alive.Dwarves += 1;
+	}else if(Dwarves.RandomOccupation == 9){
+		Dwarves.Data.Occupation.Cook += 1;
+		Res.Alive.Dwarves += 1;
+	}else{
+		console.log("Error In Choosing Random Dwarf");
+	}
+	Dwarves.NewRandomBOOL = true;
+}
+
 Dwarves.NewRandom = function(){
 	console.log("Colonizing random dwarves");
 	Dwarves.NumberOfDwarves = Math.floor(Math.random() * 5) + 1;
-	for(i=0; i<=Dwarves.NumberOfDwarves; i++){
-		Dwarves.RandomOccupation = Math.floor(Math.random() * 9) + 1;
-		if(Dwarves.RandomOccupation == 1){
-			Dwarves.Data.Occupation.None += 1;
-			Res.Alive.Dwarves += 1;
-		}else if(Dwarves.RandomOccupation == 2){
-			Dwarves.Data.Occupation.Miner += 1;
-			Res.Alive.Dwarves += 1;
-		}else if(Dwarves.RandomOccupation == 3){
-			Dwarves.Data.Occupation.Farmer += 1;
-			Res.Alive.Dwarves += 1;
-		}else if(Dwarves.RandomOccupation == 4){
-			Dwarves.Data.Occupation.Logger += 1;
-			Res.Alive.Dwarves += 1;
-		}else if(Dwarves.RandomOccupation == 5){
-			Dwarves.Data.Occupation.Hunter += 1;
-			Res.Alive.Dwarves += 1;
-		}else if(Dwarves.RandomOccupation == 6){
-			Dwarves.Data.Occupation.Fisher += 1;
-			Res.Alive.Dwarves += 1;
-		}else if(Dwarves.RandomOccupation == 7){
-			Dwarves.Data.Occupation.Shepherd += 1;
-			Res.Alive.Dwarves += 1;
-		}else if(Dwarves.RandomOccupation == 8){
-			Dwarves.Data.Occupation.Rancher += 1;
-			Res.Alive.Dwarves += 1;
-		}else if(Dwarves.RandomOccupation == 9){
-			Dwarves.Data.Occupation.Cook += 1;
-			Res.Alive.Dwarves += 1;
-		}else{
-			console.log("Error In Choosing Random Dwarf");
-		}
-		Dwarves.NewRandomBOOL = true;
+	Dwarves.AddDwarves(Dwarves.NumberOfDwarves);
 	}
 }
 
