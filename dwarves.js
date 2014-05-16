@@ -11,11 +11,11 @@ Dwarves.Shepherd = {};
 Dwarves.Rancher = {};
 Dwarves.Cook = {};
 
-Dwarves.Data.Occupation.None = 6;
-Dwarves.Data.Occupation.Miner = 1;
+Dwarves.Data.Occupation.None = 10;
+Dwarves.Data.Occupation.Miner = 0;
 Dwarves.Data.Occupation.Farmer = 0;
 Dwarves.Data.Occupation.Logger = 0;
-Dwarves.Data.Occupation.Hunter = 3;
+Dwarves.Data.Occupation.Hunter = 0;
 Dwarves.Data.Occupation.Fisher = 0;
 Dwarves.Data.Occupation.Shepherd = 0;
 Dwarves.Data.Occupation.Rancher = 0;
